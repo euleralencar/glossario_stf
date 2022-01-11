@@ -1,5 +1,6 @@
 fig:nice-fig
 tab:nice-tab
+fig:unnamed-chunk-13
 eq:binom
 sobre
 como-usar

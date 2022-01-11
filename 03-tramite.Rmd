@@ -2,12 +2,15 @@
 
 O site da estatística foi pensado para o público geral. **A ideia é trazer transparência e possibilidade de consulta aos microdados de forma fácil e intuitiva**. Para isso, é interessante explicarmos um pouco mais detalhadamente a tramitação processual do STF de forma esquematizada. <mark>Retirar "Remessa devida da figura"</mark>
 
-
-![](_bookdown_files/_main_files/figure-html/fig-cap3-1.png)
+```{r echo=FALSE, out.width = '100%',dpi = 300}
+knitr::include_graphics("_bookdown_files/_main_files/figure-html/fig-cap3-1.png")
+```
 
 Todo esse processo gera os dados que temos hoje no site do Supremo. De forma simplificada, podemos dividir a tramitação processual em 5 dimensões, como abaixo:
 
-![](_bookdown_files/_main_files/figure-html/fig-cap3-2.png)
+```{r echo=FALSE, out.width = '100%', dpi = 300}
+knitr::include_graphics("_bookdown_files/_main_files/figure-html/fig-cap3-2.png")
+```
 
 Cada uma dessas dimensões está destrinchada em painéis específicos, podendo ser obtidas informações mais detalhadas de cada etapa.
 

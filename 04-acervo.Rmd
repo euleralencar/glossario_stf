@@ -24,11 +24,16 @@ Há processos que já tiveram decisão final mas permanecem em tramitação porq
 
 No site podemos consultar o histórico dos processos em tramitação através do link <mark>"ACERVO 2020"</mark>.
 
-![](_bookdown_files/_main_files/figure-html/fig-cap4-1.png)
+```{r echo=FALSE, out.width = '100%', dpi = 300}
+knitr::include_graphics("_bookdown_files/_main_files/figure-html/fig-cap4-1.png")
+```
+
 
 Será aberto um painel com os dados registrados nos relatórios de atividades de anos anteriores ([link](https://transparencia.stf.jus.br/single/?appid=e554950b-d244-487b-991d-abcc693bfa7c&sheet=ea8942c2-79fa-494f-bf18-ca6d5a3bfb43&theme=simplicity&opt=currsel&select=clearall)):
 
-![](_bookdown_files/_main_files/figure-html/fig-cap4-2.png)
+```{r echo=FALSE, out.width = '100%', dpi = 300}
+knitr::include_graphics("_bookdown_files/_main_files/figure-html/fig-cap4-2.png")
+```
 
 Detalhamento do acervo pode ser obtido através do painel de acervo.
 
@@ -141,9 +146,10 @@ kableExtra::kable()
 
 **Regra geral**
 
-![](_bookdown_files/_main_files/figure-html/fig-cap4-3.png)
-$$ \text{Fluxo simplificado da substituição de relatoria para os casos do  art. 38, II, do RISTF. } $$
-<br>
+```{r echo=FALSE, out.width = '100%', fig.cap="Fluxo simplificado da substituição de relatoria para os casos do  art. 38, II, do RISTF.", dpi = 300, display="cite"}
+knitr::include_graphics("_bookdown_files/_main_files/figure-html/fig-cap4-3.png")
+```
+
 
 Casos de substituição de relatoria para efeitos de acervo:
 
