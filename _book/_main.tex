@@ -1,0 +1,1022 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Glossário estatístico (STF)},
+  pdfauthor={SGE},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\title{Glossário estatístico (STF)}
+\author{SGE}
+\date{2022-01-10}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{conjecture}{Conjecture}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{definition}
+\newtheorem{hypothesis}{Hypothesis}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{sobre}{%
+\chapter{Sobre}\label{sobre}}
+
+Página destinada a informação das informações estatísticas do Supremo Tribunal Federal. (Documento não oficial)
+
+\hypertarget{como-usar}{%
+\section{Como usar}\label{como-usar}}
+
+Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
+
+Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
+
+The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
+
+\hypertarget{render-book}{%
+\section{Render book}\label{render-book}}
+
+You can render the HTML version of this example book without changing anything:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Find the \textbf{Build} pane in the RStudio IDE, and
+\item
+  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
+\end{enumerate}
+
+Or build the book from the R console:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
+
+\hypertarget{preview-book}{%
+\section{Preview book}\label{preview-book}}
+
+As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{serve\_book}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{introduuxe7uxe3o-versuxe3o-beta}{%
+\chapter{Introdução (versão beta)}\label{introduuxe7uxe3o-versuxe3o-beta}}
+
+O STF vem passando por diversas mudanças com a transformação de seu parque tecnológico, inovação da era digital, gestão focada em evidências. A instituição do InovaSTF, que funcionará como um ambiente multidisciplinar fomentador de novas soluções de tecnologia na gestão processual, consolida essa visão de uma Corte Digital.
+
+Atualmente, a gestão possui mais de 99\% dos feitos tramitando eletronicamente. Avanços estes possíveis com a consolidação do STF Digital, plataforma que unifica todos os sistemas internos do Tribunal, suportando a automatização do processo judicial de forma flexível, centralizada e integrada.
+
+Também avançamos com o novo formato do Diário da Justiça Eletrônico, em versão HTML, automatizamos o fluxo processual desde a autuação até a baixa definitiva e instituímos uma nova disciplina para o processo eletrônico que privilegia a tramitação 100\% digital.
+
+Esse avanço se deu também com aproximação da sociedade através do fortalecimento da Central do Cidadão, o lançamento da Carta de Serviços, a criação do Painel Multissetorial de Checagem de Informações e Combate a Notícias Falsas.
+
+A Corte avançou significativamente na Transparência de seus dados. Ainda em 2018, o Tribunal lançou Resolução 613/2018 que regulamenta a aplicação, no âmbito do Supremo Tribunal Federal, da Lei nº 12.527/2011, que versa sobre o acesso à informação. Os dados estão disponíveis no site:
+
+{[}Figura{]}
+
+Ainda neste sentido, pensando na Transparência de dados judiciais, o portal da Estatística (\url{http://portal.stf.jus.br/estatistica/}) foi reformulado com o objetivo de trazer dados atualizados diariamente para seu jurisdicionado de maneira interativa, amigável e intuitiva.
+
+A página da estatística procura trazer os principais resultados de forma resumida numa primeira página e possibilita o detalhamento da informação utilizando o botão ``VER MAIS''.
+
+{[}Figura{]}
+
+O documento a seguir tem como objetivo documentar a definição e critérios das principais estatísticas judiciais da Corte disponíveis no site e mostrar algumas funcionalidades.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{a-section}{%
+\section{A section}\label{a-section}}
+
+All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+
+\hypertarget{an-unnumbered-section}{%
+\subsection*{An unnumbered section}\label{an-unnumbered-section}}
+\addcontentsline{toc}{subsection}{An unnumbered section}
+
+Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
+
+\hypertarget{cross}{%
+\chapter{Cross-references}\label{cross}}
+
+Cross-references make it easier for your readers to find and link to elements in your book.
+
+\hypertarget{chapters-and-sub-chapters}{%
+\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
+
+There are two steps to cross-reference any heading:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
+  \item
+    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
+  \end{itemize}
+\item
+  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{captioned-figures-and-tables}{%
+\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
+
+Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tag:chunk-label)}, respectively.
+
+See Figure \ref{fig:nice-fig}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{_main_files/figure-latex/nice-fig-1} 
+
+}
+
+\caption{Here is a nice figure!}\label{fig:nice-fig}
+\end{figure}
+
+Don't miss Table \ref{tab:nice-tab}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
+  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
+  \AttributeTok{booktabs =} \ConstantTok{TRUE}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:nice-tab}Here is a nice table!}
+\centering
+\begin{tabular}[t]{rr}
+\toprule
+temperature & pressure\\
+\midrule
+0 & 0.0002\\
+20 & 0.0012\\
+40 & 0.0060\\
+60 & 0.0300\\
+80 & 0.0900\\
+\addlinespace
+100 & 0.2700\\
+120 & 0.7500\\
+140 & 1.8500\\
+160 & 4.2000\\
+180 & 8.8000\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{tramite}{%
+\chapter{Trâmite processual}\label{tramite}}
+
+O site da estatística foi pensado para o público geral. \textbf{A ideia é trazer transparência e possibilidade de consulta aos microdados de forma fácil e intuitiva}. Para isso, é interessante explicarmos um pouco mais detalhadamente a tramitação processual do STF de forma esquematizada. Retirar ``Remessa devida da figura''
+
+\includegraphics{_bookdown_files/_main_files/figure-html/fig-cap3-1.png}
+
+Todo esse processo gera os dados que temos hoje no site do Supremo. De forma simplificada, podemos dividir a tramitação processual em 5 dimensões, como abaixo:
+
+\includegraphics{_bookdown_files/_main_files/figure-html/fig-cap3-2.png}
+
+Cada uma dessas dimensões está destrinchada em painéis específicos, podendo ser obtidas informações mais detalhadas de cada etapa.
+
+\hypertarget{classes-processuais}{%
+\section{Classes processuais}\label{classes-processuais}}
+
+As classes processuais estão previstas no art. 55 do Regimento Interno do Supremo Tribunal Federal (RISTF), com atualização da Resolução 604/2017 e são divididas entre recursais e originárias e . São classes recursais o recurso extraordinário (RE), o recurso extraordinário com agravo (ARE) e o agravo de instrumento (AI). São classes originárias todas as demais, incluídos os recursos ordinários. Atualmente, as classes recursais estão submetidas ao regime da \textbf{repercussão geral}, criado pela \href{http://www.planalto.gov.br/ccivil_03/Constituicao/Emendas/Emc/emc45.htm\#art9}{Emenda Constitucional n° 45/2004} e regulamentado pelos arts. 1.035 e 1.036 do Novo Código de Processo Civil, na redação dada pela \href{http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Lei/L13256.htm\#art3}{Lei 13.256/2016}.
+
+A Resolução 604/2017 atualiza as classes processuais e os incidentes disponíveis para autuação e registro de processos no Supremo Tribunal Federal.
+
+\hypertarget{classes-processuais-1}{%
+\subsection{Classes Processuais}\label{classes-processuais-1}}
+
+\begin{tabular}{l|l}
+\hline
+Classe & Descrição\\
+\hline
+AC & Ação Cautelar\\
+\hline
+ACO & Ação Cível Originária\\
+\hline
+ADC & Ação Declaratória de Constitucionalidade\\
+\hline
+ADI & Ação Direta de Inconstitucionalidade\\
+\hline
+ADO & Ação Direta de Inconstitucionalidade por Omissão\\
+\hline
+ADPF & Arguição de Descumprimento de Preceito Fundamental\\
+\hline
+AI & Agravo de Instrumento\\
+\hline
+AImp & Arguição de Impedimento\\
+\hline
+AO & Ação Originária\\
+\hline
+AOE & Ação Originária Especial\\
+\hline
+AP & Ação Penal\\
+\hline
+AR & Ação Rescisória\\
+\hline
+ARE & Recurso Extraordinário com Agravo\\
+\hline
+AS & Arguição de Suspeição\\
+\hline
+CC & Conflito de Competência\\
+\hline
+Cm & Comunicação\\
+\hline
+EI & Exceção de Incompetência\\
+\hline
+EL & Exceção de Litispendência\\
+\hline
+Ext & Extradição\\
+\hline
+HC & Habeas Corpus\\
+\hline
+HD & Habeas Data\\
+\hline
+IF & Intervenção Federal\\
+\hline
+Inq & Inquérito\\
+\hline
+MI & Mandado de Injunção\\
+\hline
+MS & Mandado de Segurança\\
+\hline
+Pet & Petição\\
+\hline
+PPE & Prisão Preventiva para Extradição\\
+\hline
+PSV & Proposta de Súmula Vinculante\\
+\hline
+Rcl & Reclamação\\
+\hline
+RE & Recurso Extraordinário\\
+\hline
+RHC & Recurso em Habeas Corpus\\
+\hline
+RHD & Recurso em Habeas Data\\
+\hline
+RMI & Recurso em Mandado de Injunção\\
+\hline
+RMS & Recurso em Mandado de Segurança\\
+\hline
+RvC & Revisão Criminal\\
+\hline
+SIRDR & Suspensão do Incidente de Resolução de Demandas Repetitivas\\
+\hline
+SL & Suspensão de Liminar\\
+\hline
+SS & Suspensão de Segurança\\
+\hline
+STP & Suspensão de Tutela Provisória\\
+\hline
+TPA & Tutela Provisória Antecedente\\
+\hline
+\end{tabular}
+
+\hypertarget{incidentes-apartados}{%
+\subsection{Incidentes apartados}\label{incidentes-apartados}}
+
+\begin{tabular}{l|l}
+\hline
+Incidentes & Descrição\\
+\hline
+AAs & Admissão de Assistente\\
+\hline
+IVC & Impugnação ao valor da causa\\
+\hline
+IFa & Incidente de falsidade\\
+\hline
+Ops & Oposição\\
+\hline
+SPer & Suspeição de perito\\
+\hline
+\end{tabular}
+
+\hypertarget{incidentes-processuais}{%
+\subsection{Incidentes processuais}\label{incidentes-processuais}}
+
+\begin{tabular}{l|l}
+\hline
+Incidentes & Descrição\\
+\hline
+EE & Embargos à Execução\\
+\hline
+CS & Cumprimento de Sentença\\
+\hline
+EFP & Execução contra a Fazenda Pública\\
+\hline
+EP & Execução de Pena\\
+\hline
+Extn & Extensão\\
+\hline
+IAC & Incidente de Assunção de Competência\\
+\hline
+TPI & Tutela Provisória Incidental\\
+\hline
+\end{tabular}
+
+\hypertarget{recursos-internos}{%
+\subsection{Recursos Internos}\label{recursos-internos}}
+
+\begin{tabular}{l|l}
+\hline
+Incidentes & Descrição\\
+\hline
+AAs & Admissão de Assistente\\
+\hline
+IVC & Impugnação ao valor da causa\\
+\hline
+IFa & Incidente de falsidade\\
+\hline
+Ops & Oposição\\
+\hline
+SPer & Suspeição de perito\\
+\hline
+\end{tabular}
+
+\hypertarget{andamentos-processuais}{%
+\section{Andamentos processuais}\label{andamentos-processuais}}
+
+Os andamentos processuais possibilitam o acompanhamento da tramitação de todos os feitos do STF. Com intuito de uniformizar as informações foi criado o Comite de Uniformização de Dados e Procedimentos Judiciais (COUNI). Compete ao Comitê decidir sobre conceitos, regras e procedimentos relativos à coleta, à classificação e à análise dos dados da prestação jurisdicional do STF, tendo em vista sua informatização e a transparência de sua veiculação aos públicos interno e externo.
+
+Os andamentos são divididos dentro de grupos e subgrupos de forma a facilitar sua utilização, conforme tabela abaixo:
+
+\hypertarget{andamentos-processuais-ativos}{%
+\subsection{Andamentos processuais ativos}\label{andamentos-processuais-ativos}}
+
+{[}Tabela{]}
+
+\hypertarget{acervo}{%
+\chapter{Acervo}\label{acervo}}
+
+Os processos em tramitação no STF também são chamados de acervo. Nele estão computados todos os processos que tiveram andamento de entrada e ainda não foram baixados.
+
+\hypertarget{processos-em-tramitauxe7uxe3o-acervo}{%
+\section{Processos em tramitação (acervo)}\label{processos-em-tramitauxe7uxe3o-acervo}}
+
+O acervo processual do Tribunal corresponde ao quantitativo de processos em tramitação (excluindo-se os sigilosos) em determinada data. Computa-se, portanto, tudo que a Corte recebeu (\protect\hyperlink{recebimento}{veja mais aqui}), excetuados os processos que já baixaram às origens ou arquivados no Tribunal (\protect\hyperlink{baixados}{veja mais aqui}).
+
+\hypertarget{andamentos-que-colocam-um-processo-em-truxe2mite}{%
+\subsection{Andamentos que colocam um processo em trâmite}\label{andamentos-que-colocam-um-processo-em-truxe2mite}}
+
+{[}Tabela{]}
+
+\hypertarget{andamentos-que-retiram-um-processo-de-truxe2mite}{%
+\subsection{Andamentos que retiram um processo de trâmite}\label{andamentos-que-retiram-um-processo-de-truxe2mite}}
+
+{[}Tabela{]}
+
+A cada processo é designado um relator. Considera-se o \textbf{Ministro Relator Atual} o relator do último recurso, sendo feita a devida alteração quando há incidente de fato. Veja detalhes aqui.
+Há feitos que são registrados ao Ministro Presidente, por determinação regimental, em razão do cargo. Quando o Ministro assume a Presidência, seus processos tornam-se o acervo do Ministro que deixou a Presidência. No entanto, continuam sob relatoria do novo Presidente aqueles processos que, até a data da assunção ao cargo, tenham sido, por ele, incluídos em pauta. Também continuam sob sua relatoria os processos que, à época de sua assunção na Presidência, eram objeto de pedido de vista por parte de outros Ministros.
+Há processos que já tiveram decisão final mas permanecem em tramitação porque ainda aguardam o julgamento de recurso interno (agravo regimental, embargos de declaração ou embargos de divergência) ou a realização de providências complementares como a contagem de prazo, a realização de comunicações processuais e a publicação de acórdão.
+
+\hypertarget{histuxf3rico-do-acervo}{%
+\subsection{Histórico do acervo}\label{histuxf3rico-do-acervo}}
+
+No site podemos consultar o histórico dos processos em tramitação através do link ``ACERVO 2020''.
+
+\includegraphics{_bookdown_files/_main_files/figure-html/fig-cap4-1.png}
+
+Será aberto um painel com os dados registrados nos relatórios de atividades de anos anteriores (\href{https://transparencia.stf.jus.br/single/?appid=e554950b-d244-487b-991d-abcc693bfa7c\&sheet=ea8942c2-79fa-494f-bf18-ca6d5a3bfb43\&theme=simplicity\&opt=currsel\&select=clearall}{link}):
+
+\includegraphics{_bookdown_files/_main_files/figure-html/fig-cap4-2.png}
+
+Detalhamento do acervo pode ser obtido através do painel de acervo.
+
+\hypertarget{painel-do-acervo}{%
+\section{Painel do acervo}\label{painel-do-acervo}}
+
+Tópico pendente!
+
+\hypertarget{entenda-o-acervo}{%
+\section{Entenda o acervo}\label{entenda-o-acervo}}
+
+\hypertarget{conceitos-do-acervo}{%
+\subsection{Conceitos do acervo}\label{conceitos-do-acervo}}
+
+\hypertarget{acervo-processual}{%
+\subsubsection{Acervo processual}\label{acervo-processual}}
+
+O acervo processual do Tribunal é composto pelos processos que se encontram em tramitação em determinada data. Computa-se, portanto, tudo que a Corte recebeu, excetuados os processos que já baixaram.
+Há processos que já tiveram decisão final mas permanecem em tramitação porque ainda aguardam o julgamento de recurso interno (agravo regimental, embargos de declaração, embargos infringentes ou embargos de divergência) ou a realização de providências complementares como a contagem de prazo, a realização de comunicações processuais e a publicação de acórdão.
+
+\hypertarget{acervo-processual-de-cada-ministro}{%
+\paragraph{Acervo processual de cada Ministro}\label{acervo-processual-de-cada-ministro}}
+
+O acervo processual de cada Ministro é composto pelos processos que recebeu do Ministro cuja vaga ocupou e por aqueles distribuídos após sua posse.
+Tem-se, portanto, que cada Ministro inicia seu exercício no Tribunal com um acervo processual distinto, composto por processos de diferentes idades e que se encontram em diversas fases de tramitação. A distribuição de processos para um Ministro é interrompida logo após a vacância do cargo e é retomada com a posse do Ministro que ocupará sua vaga. Após a posse do novo Ministro, inicia-se um procedimento de compensação do quantitativo de processos que deixou de receber durante o período da vacância do cargo, salvo se o dispensar o Tribunal (art. 67, § 1° do Regimento Interno do STF).
+
+\hypertarget{localizauxe7uxe3o-dos-processos}{%
+\paragraph{Localização dos processos}\label{localizauxe7uxe3o-dos-processos}}
+
+Os processos em tramitação podem estar localizados no gabinete do Relator, no gabinete de outros Ministros, em outros setores ou mesmo fora do Tribunal. Alguns conceitos utilizados, descreve-se abaixo:
+
+\hypertarget{localizados-no-gabinete-do-relator}{%
+\paragraph{Localizados no gabinete do Relator}\label{localizados-no-gabinete-do-relator}}
+
+No gabinete dos respectivos relatores, encontram-se os feitos (i) que aguardam julgamento de mérito; que já tiveram julgamento de mérito, mas que aguardam apreciação de recurso interposto por alguma das partes (agravo regimental, embargos de declaração, embargos de divergência, embargos infringentes e embargos à execução); e (iii) que já tiveram julgamento de mérito, não tiveram interposição de recurso, mas aguardam, no gabinete, a realização de providências complementares, como a liberação de decisão ou acórdão para publicação ou a apreciação de algum pedido incidental.
+É importante notar que nem todos os processos localizados nos gabinetes e que têm o mérito pendente estão prontos para julgamento. A título exemplificativo, há processos que tiveram, na petição inicial, (i) pedido de liminar ou tutela antecipada; que (ii) necessitam de contrarrazões ou da solicitação de informações a outros órgãos; ou (iii) que pendem de manifestação da Procuradoria-Geral da República, dentre outras providências.
+
+\hypertarget{localizados-no-gabinete-de-outros-ministros}{%
+\paragraph{Localizados no gabinete de outros Ministros}\label{localizados-no-gabinete-de-outros-ministros}}
+
+Um processo é remetido ao gabinete de Ministro que não seja seu relator quando:
+
+\begin{itemize}
+\tightlist
+\item
+  há pedido de vista; para revisão de ações penais e ações rescisórias;
+\item
+  para redação do acórdão, se o Relator for vencido; e
+\item
+  para deliberação sobre medida urgente nos períodos de recesso e férias e em casos de vacância, licença ou ausência do Relator, nas hipóteses regimentais.
+\end{itemize}
+
+\hypertarget{procuradoria-geral-da-repuxfablica}{%
+\paragraph{Procuradoria-Geral da República}\label{procuradoria-geral-da-repuxfablica}}
+
+Os processos são remetidos à PGR para manifestação, como custus legis, ou para intimação, nos casos em que é parte.
+
+\hypertarget{advogados-uxf3rguxe3os-externos-e-setores-internos}{%
+\paragraph{Advogados, órgãos externos e setores internos}\label{advogados-uxf3rguxe3os-externos-e-setores-internos}}
+
+Os processos podem estar localizados (i) em outros setores do Tribunal, para juntada de petições, publicação de decisões, composição de acórdão, realização de comunicações processuais, realização de diligências, aguardando decurso de prazo, sobrestados, etc.; (ii) em órgãos externos; (iii) com os advogados das partes; ou (iv) em outro juízo ou Tribunal, para a realização de diligências.
+
+\hypertarget{situauxe7uxe3o-dos-processos}{%
+\subsubsection{Situação dos processos}\label{situauxe7uxe3o-dos-processos}}
+
+\hypertarget{sem-decisuxe3o-final}{%
+\paragraph{Sem decisão final}\label{sem-decisuxe3o-final}}
+
+Os processos sem decisão final podem se encaixar nas seguintes situações:
+
+\begin{itemize}
+\tightlist
+\item
+  Em instrução (sem decisão);
+\item
+  Com alguma decisão, exceto decisão final;
+\item
+  Com decisão final;
+\item
+  Com recurso interno pendente;
+\item
+  Sem recurso interno pendente.
+\end{itemize}
+
+\hypertarget{em-instruuxe7uxe3o-sem-decisuxe3o}{%
+\paragraph{Em instrução (sem decisão)}\label{em-instruuxe7uxe3o-sem-decisuxe3o}}
+
+Há processos que exigem, antes da tomada de qualquer decisão, informações complementares ou a manifestação da Procuradoria-Geral da República ou da Advocacia-Geral da União. Essas providências são determinadas pelo Relator por meio de despacho.
+
+Ainda que os despachos sejam irrecorríveis, pode ocorrer de uma das partes interpor recurso interno (agravo regimental, embargos de declaração, embargos infringentes ou embargos de divergência). Nesse caso, o processo será concluso ao Relator para que o recurso seja apreciado e julgado.
+
+\hypertarget{com-alguma-decisuxe3o-exceto-decisuxe3o-final}{%
+\paragraph{Com alguma decisão, exceto decisão final}\label{com-alguma-decisuxe3o-exceto-decisuxe3o-final}}
+
+O julgamento do processo é identificado pela decisão final, mas cada feito pode ter mais de uma decisão. As decisões podem ser monocráticas ou colegiadas e são classificadas, no STF, em:
+
+decisões liminares;
+
+decisões interlocutórias;
+
+decisões de sobrestamento\footnote{Sobrestamento: é a suspensão do trâmite processual até o implemento de determinada condição.};
+
+decisões finais;
+
+decisões de repercussão geral; e
+
+decisões em recurso interno (agravo regimental, embargos de declaração, embargos infringentes e embargos de divergência).
+
+Decisões liminares e decisões de sobrestamento, ainda que interlocutórias, receberam, no Tribunal, classificação própria, para fins estatísticos.
+
+Essas decisões são publicadas e, se for o caso, devem também ser objeto de comunicação.
+
+\textbf{Com decisão final}
+
+A decisão final é a principal decisão do processo. Ainda que possam ser utilizados, como sinônimos para decisão final, decisão de mérito ou julgamento de mérito, é possível que a decisão final não chegue a efetivamente apreciar o mérito da causa. Noutras palavras, são consideradas decisões finais também as decisões de não conhecimento, de prejudicialidade, de homologação de desistência e de negativa de seguimento.
+
+\textbf{Com recurso interno pendente}
+
+Se for apresentado recurso interno, o processo será encaminhado ao Relator para apreciação.
+São recursos internos o agravo regimental, os embargos de declaração, os embargos infringentes e os embargos de divergência.
+As partes podem interpor recurso de qualquer decisão e o Tribunal deverá apreciá-lo mesmo que se trate de decisão irrecorrível.
+
+\textbf{Sem recurso interno pendente}
+
+Após a decisão final, são necessárias providências complementares, como a publicação da decisão ou acórdão, a expedição de comunicações e a contagem do prazo processual.\\
+Se não houver recurso, ocorrerá o trânsito em julgado da decisão e, subsequentemente, a baixa do processo ao arquivo ou à origem.
+
+\hypertarget{regra-de-relatoria-do-processo}{%
+\subsection{Regra de relatoria do processo}\label{regra-de-relatoria-do-processo}}
+
+O acervo divulgado do Ministro no Portal do STF utiliza como critério o filtro do campo ``Relator Atual'' do Portal de Informações Gerenciais. Ao chegar no Tribunal, o processo é sorteado para o relator do mérito que será alocado inicialmente como ``Relator Atual''.
+Ou seja, o processo constará no acervo de determinado Ministro, quando o processo for distribuído para o Ministro:
+
+\begin{tabular}{r|l}
+\hline
+Código & Andamento\\
+\hline
+7501 & andamentos de distribuição por exclusão\\
+\hline
+7502 & normal\\
+\hline
+7503 & por prevenção\\
+\hline
+7504 & por prevenção de Turma\\
+\hline
+\end{tabular}
+
+\textbf{Regra geral}
+
+\includegraphics{_bookdown_files/_main_files/figure-html/fig-cap4-3.png}
+\[ \text{Fluxo simplificado da substituição de relatoria para os casos do  art. 38, II, do RISTF. } \]
+
+Casos de substituição de relatoria para efeitos de acervo:
+
+\begin{itemize}
+\tightlist
+\item
+  Se o processo receber os andamentos 7508 - substituição nos casos, por exemplo, de aposentadoria, renúncia ou morte ou o andamento 7505 - redistribuição posteriores à distribuição, passará a constar no acervo de um novo ministro.
+\item
+  Se o processo receber o andamento 8509 - Substituição do Relator, art. 38, II, do RISTF, em que o relator, quando vencido no julgamento, é substituído pelo Ministro designado para lavrar o acórdão, o processo permanece no acervo do Ministro Relator até que haja algum incidente. Recebido o incidente, o campo ``Relator atual'' passa a ser preenchido com o nome do relator do último incidente, alterando o acervo deste.
+  A \textbf{substituição de relatoria} é a troca de um relator por outro Ministro previamente determinado em normativo. Ela se diferencia da redistribuição porque se sabe exatamente para qual novo Ministro a relatoria do processo deverá ser atribuída.
+  No caso da substituição do relator vencido no julgamento, o registro de redator para o acórdão é lançado no sistema textual pela equipe do Plenário/Turmas. Em termos quantitativos, devido à regra de sistema, este registro não impacta o acervo dos ministros. Como mencionado, o acervo do ministro só será impactado após o recebimento do incidente. Nos casos em que o relator é vencido, ao ingressar uma petição no STF, cada caso será analisado individualmente para verificar para quem será o registro. Se a petição tiver relação com o acórdão, normalmente, deve ser registrada para o redator do acórdão.
+\end{itemize}
+
+\hypertarget{recebimento}{%
+\chapter{Recebimento}\label{recebimento}}
+
+\hypertarget{equations}{%
+\section{Equations}\label{equations}}
+
+Here is an equation.
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  \label{eq:binom}
+\end{equation}
+
+You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+
+\hypertarget{theorems-and-proofs}{%
+\section{Theorems and proofs}\label{theorems-and-proofs}}
+
+Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+
+\begin{theorem}
+\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
+and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
+\[a^2 + b^2 = c^2\]
+\end{theorem}
+
+Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+
+\hypertarget{callout-blocks}{%
+\section{Callout blocks}\label{callout-blocks}}
+
+The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+
+\hypertarget{sharing-your-book}{%
+\chapter{Sharing your book}\label{sharing-your-book}}
+
+\hypertarget{publishing}{%
+\section{Publishing}\label{publishing}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages}{%
+\section{404 pages}\label{pages}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing}{%
+\section{Metadata for sharing}\label{metadata-for-sharing}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{sharing-your-book-1}{%
+\chapter{Sharing your book}\label{sharing-your-book-1}}
+
+\hypertarget{publishing-1}{%
+\section{Publishing}\label{publishing-1}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages-1}{%
+\section{404 pages}\label{pages-1}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing-1}{%
+\section{Metadata for sharing}\label{metadata-for-sharing-1}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{sharing-your-book-2}{%
+\chapter{Sharing your book}\label{sharing-your-book-2}}
+
+\hypertarget{publishing-2}{%
+\section{Publishing}\label{publishing-2}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages-2}{%
+\section{404 pages}\label{pages-2}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing-2}{%
+\section{Metadata for sharing}\label{metadata-for-sharing-2}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{sharing-your-book-now}{%
+\chapter{Sharing your book NOW}\label{sharing-your-book-now}}
+
+\hypertarget{publishing-3}{%
+\section{Publishing}\label{publishing-3}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages-3}{%
+\section{404 pages}\label{pages-3}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing-3}{%
+\section{Metadata for sharing}\label{metadata-for-sharing-3}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{baixados}{%
+\chapter{Baixados}\label{baixados}}
+
+\hypertarget{publishing-4}{%
+\section{Publishing}\label{publishing-4}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages-4}{%
+\section{404 pages}\label{pages-4}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing-4}{%
+\section{Metadata for sharing}\label{metadata-for-sharing-4}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{sharing-your-book-3}{%
+\chapter{Sharing your book}\label{sharing-your-book-3}}
+
+\hypertarget{publishing-5}{%
+\section{Publishing}\label{publishing-5}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages-5}{%
+\section{404 pages}\label{pages-5}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing-5}{%
+\section{Metadata for sharing}\label{metadata-for-sharing-5}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{sharing-your-book-4}{%
+\chapter{Sharing your book}\label{sharing-your-book-4}}
+
+\hypertarget{publishing-6}{%
+\section{Publishing}\label{publishing-6}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages-6}{%
+\section{404 pages}\label{pages-6}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing-6}{%
+\section{Metadata for sharing}\label{metadata-for-sharing-6}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{sharing-your-book-5}{%
+\chapter{Sharing your book}\label{sharing-your-book-5}}
+
+\hypertarget{publishing-7}{%
+\section{Publishing}\label{publishing-7}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages-7}{%
+\section{404 pages}\label{pages-7}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing-7}{%
+\section{Metadata for sharing}\label{metadata-for-sharing-7}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
