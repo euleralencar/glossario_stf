@@ -133,23 +133,6 @@
 \author{SGE}
 \date{2022-01-11}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -241,95 +224,36 @@ All chapter sections start with a second-level (\texttt{\#\#}) or higher heading
 
 Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
 
-\hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
+\hypertarget{historia}{%
+\chapter{História das estatísticas no STF}\label{historia}}
 
-Cross-references make it easier for your readers to find and link to elements in your book.
+\hypertarget{estatuxedstica-no-stf}{%
+\section{Estatística no STF}\label{estatuxedstica-no-stf}}
 
-\hypertarget{chapters-and-sub-chapters}{%
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
+\hypertarget{inuxedcio}{%
+\subsection{Início}\label{inuxedcio}}
 
-There are two steps to cross-reference any heading:
+O sistema de estatística judiciária do Supremo Tribunal Federal organizou-se formalmente em 2004, por meio da Resolução nº 284/2004, em razão da necessidade imperiosa de fazer uso de instrumentos capazes de instruir o planejamento e a gerência da atividade jurisdicional, além de lhe agregar transparência.
+Desde então, muitas foram as ações que se seguiram para o aprimoramento da base de dados que serve à estatística, para torná-la consistente e fidedigna. Nesse sentido, a padronização, a simplificação e a eleição de registros que possam ser pesquisáveis são os atributos mais importantes para o alcance desse objetivo.
+Dentre os dados processuais, os ``andamentos'' merecem relevo: a partir deles, muito se pode extrair no que diz respeito a indicadores que já se tornaram comuns no dia a dia dos órgãos jurisdicionais, como, por exemplo, as taxas de congestionamento, e de recorribilidade.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
+\hypertarget{aprimoramento-da-base-de-dados}{%
+\subsection{Aprimoramento da base de dados}\label{aprimoramento-da-base-de-dados}}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
-  \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
-  \end{itemize}
-\item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
+A tabela de andamentos processuais é objeto de estudo pelo Tribunal desde 2003, quando se diagnosticou que suas inadequações estruturais eram responsáveis por inconsistências nos relatórios estatísticos do Tribunal.
+A partir da verificação de que muitos andamentos tão só repetiam de forma diversa a mesma situação processual, teve lugar a primeira grande medida de higienização dessa tabela, visando à padronização dos lançamentos. Em 2007, a antiga tabela, que continha 488 andamentos, foi substituída por nova versão, com 257 andamentos.
+Outra ação importante, iniciada na mesma época, foi o detalhamento dos dados passíveis de agregar valor às informações da Corte. Nesse sentido, as decisões passaram a ser identificadas por espécie, (inicialmente subdivididas em finais, interlocutórias e liminares) para permitir gestão efetiva da atividade jurisdicional.
+Em 2011, porque vencidas as primeiras etapas, voltou-se o Tribunal para um trabalho sistemático de gestão da informação propriamente dita, que compreende: a formulação de regras que orientam os usuários responsáveis pelos registros; e, de forma inédita, a correção e adequação dos registros já existentes.\\
+A decisão de adequar registros anteriores quase sempre é descartada por quem administra dados, eis que é extremamente trabalhosa. No entanto, os resultados trazidos por tal procedimento são também bastante positivos. Trata-se de permitir a análise comparativa das atividades do Tribunal, em exercícios anteriores, a partir do mesmo grau de refinamento alcançado a cada etapa do trabalho, ainda que esse resgate denote desempenho menos satisfatório, conforme o olhar do observador ou analista. Noutras palavras, o compromisso do gestor de dados deve ser com sua fidedignidade e transparência.
+Dados precisos permitem que pesquisadores e acadêmicos tenham extensas possibilidades de análise da atividade jurisdicional, o que só a aprimora.
+Apenas nos últimos três meses de 2011, mais de 180 mil andamentos, lançados a partir de 2008, foram revistos, corrigidos ou adequados.
+Em 2016, a partir da análise de auditoria interna no sistema de informação gerencial, foram identificadas novas inconsistências no registro de andamentos processuais. Visando a melhor definição da situação do processo, para permitir a extração de dados para o planejamento da gestão da celeridade da prestação jurisdicional, redefiniram-se grupos e subgrupos de andamentos processuais, com revisão de mais de 1.000 processos.
 
-  \begin{itemize}
-  \tightlist
-  \item
-    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
-  \end{itemize}
-\end{enumerate}
+\hypertarget{novas-ferramentas}{%
+\subsection{Novas ferramentas}\label{novas-ferramentas}}
 
-\hypertarget{captioned-figures-and-tables}{%
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
-
-Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tag:chunk-label)}, respectively.
-
-See Figure \ref{fig:nice-fig}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{_main_files/figure-latex/nice-fig-1} 
-
-}
-
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
-
-Don't miss Table \ref{tab:nice-tab}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rr}
-\toprule
-temperature & pressure\\
-\midrule
-0 & 0.0002\\
-20 & 0.0012\\
-40 & 0.0060\\
-60 & 0.0300\\
-80 & 0.0900\\
-\addlinespace
-100 & 0.2700\\
-120 & 0.7500\\
-140 & 1.8500\\
-160 & 4.2000\\
-180 & 8.8000\\
-\bottomrule
-\end{tabular}
-\end{table}
+Ainda em 2016, para facilitar a extração de informações, foram criados mais de 30 painéis estatísticos, que utilizam ferramenta de Business Intelligence (BI). Por meio deles, são possíveis a padronização e a automatização da busca de informações do acervo processual, como, por exemplo: tempo médio de tramitação, taxa de recorribilidade, acervo e produção por gabinete em data certa, produção de gabinete por período definido e processos com vistas devolvidas.
+Em virtude de questões tecnológicas, o Business Intelligence permitia visualização de relatórios apenas pelo Internet Explorer. Por isso, no âmbito do projeto ``Transparência aos Dados'', em 2018, o portal da estatística foi reformulado. Neste novo modelo, os painéis, já disponibilizados no sistema anterior, foram organizados de forma prática utilizando a ferramenta Qlik Sense. Estão divididos por temas como acervo, pauta do Plenário e das Turmas, decisões (monocráticas e colegiadas), trabalho remoto e julgamentos virtuais, entre outros. Ao clicar no item Pauta do Plenário, por exemplo, há estatísticas sobre total de processos, quantidade daqueles com vista pendente e divisão entre Plenário Virtual e Presencial, por relator e por classes processuais. Os dados podem ser consultados em qualquer browser, inclusive no celular e as informações estão mais intuitivas e amigáveis, em formato de dados abertos e atualizadas sem intervenção manual.
 
 \hypertarget{tramite}{%
 \chapter{Trâmite processual}\label{tramite}}
@@ -643,17 +567,22 @@ Ainda que os despachos sejam irrecorríveis, pode ocorrer de uma das partes inte
 
 O julgamento do processo é identificado pela decisão final, mas cada feito pode ter mais de uma decisão. As decisões podem ser monocráticas ou colegiadas e são classificadas, no STF, em:
 
-decisões liminares;
-
-decisões interlocutórias;
-
-decisões de sobrestamento\footnote{Sobrestamento: é a suspensão do trâmite processual até o implemento de determinada condição.};
-
-decisões finais;
-
-decisões de repercussão geral; e
-
-decisões em recurso interno (agravo regimental, embargos de declaração, embargos infringentes e embargos de divergência).
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  decisões liminares;
+\item
+  decisões interlocutórias;
+\item
+  decisões de sobrestamento\footnote{Sobrestamento: é a suspensão do trâmite processual até o implemento de determinada condição.};
+\item
+  decisões finais;
+\item
+  decisões de repercussão geral; e
+\item
+  decisões em recurso interno (agravo regimental, embargos de declaração, embargos infringentes e embargos de divergência).
+\end{enumerate}
 
 Decisões liminares e decisões de sobrestamento, ainda que interlocutórias, receberam, no Tribunal, classificação própria, para fins estatísticos.
 
@@ -715,35 +644,112 @@ Casos de substituição de relatoria para efeitos de acervo:
 \hypertarget{recebimento}{%
 \chapter{Recebimento}\label{recebimento}}
 
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
+Recebimento de processos
 
-Here is an equation.
+O \textbf{processamento inicial começa com o recebimento e a autuação do processo}. Consideram-se processos recebidos os ajuizados diretamente no STF, denominados ``originários'', e também aqueles provenientes de outros juízos ou tribunais, chamados ``recursais''.
 
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
-\end{equation}
+Do total de processos recebidos, parte tem seguimento obstado pela Presidência, por atribuição regimental (arts. 13, V, ``c'' e ``d''; 327, caput; e 328, parágrafo único, do RISTF):
 
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+\begin{itemize}
+\item
+  recursos que não preenchem requisitos formais de admissibilidade;
+\item
+  que tratam de temas com repercussão geral já apreciada pelo STF;
+\item
+  prejudicados em razão de decisão do STJ em recurso especial ou agravo interposto no mesmo processo.
+\end{itemize}
 
-\hypertarget{theorems-and-proofs}{%
-\section{Theorems and proofs}\label{theorems-and-proofs}}
+Outra parte é registrada à Presidência (arts. 13, V, d, e XV; 70, § 4°; 278; 297; 351 e 354-A, do RISTF):
 
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+\begin{itemize}
+\tightlist
+\item
+  habeas corpus em que seja manifesta a incompetência do tribunal para apreciação do pedido;
+\item
+  feitos das classes Arguição de Suspeição (AS), Intervenção Federal (IF), Proposta de Súmula Vinculante (PSV), Suspensão de Liminar (SL), Suspensão de Segurança (SS) e Suspensão de Tutela Antecipada (STA).
+\end{itemize}
 
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
+Os processos que não se enquadram nas hipóteses anteriores são objeto de distribuição, livre ou por prevenção, aos Ministros do Supremo, excetuado o Presidente.
 
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+\hypertarget{regra-de-recebimento}{%
+\section{Regra de Recebimento}\label{regra-de-recebimento}}
 
-\hypertarget{callout-blocks}{%
-\section{Callout blocks}\label{callout-blocks}}
+Os dados disponibilizados no painel utilizam como referência o campo data de primeiro ingresso do processo no STF independente do lançamento dos andamentos ``protocolado'' ou ``autuado''.
+Neste painel estão contabilizados inclusive processos que não seguiram trâmite de fato no STF, como por exemplo: processos com cancelamento de autuação, reautuados, retificados ou devolvidos por impossibilidade de processamento. No painel, há um filtro para exclusão automática destes casos.
+Contudo petições avulsas ou incidentais que não são convertidas em processo, não são contabilizadas no recebimento. Para mais informações, \protect\hyperlink{painel-recebimento}{ver aqui}.
 
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+\hypertarget{painel-recebimento}{%
+\section{Painel de Recebimento}\label{painel-recebimento}}
+
+O objetivo é apresentar as principais dimensões do painel de recebimento disponibilizado no \href{https://transparencia.stf.jus.br/single/?appid=b282ea92-29ef-4eeb-9676-2b9615ddfabd\&sheet=ef87c134-e282-47ac-8f8f-813754f74e76}{Portal STF}.
+
+\includegraphics[width=1\linewidth]{imagens/fig-cap5-1}
+
+\hypertarget{taxonomia-do-painel}{%
+\subsection{Taxonomia do painel}\label{taxonomia-do-painel}}
+
+O painel de acervo possui 9 filtros, além da possibilidade de utilizar gráficos e tabelas para outras seleções.
+
+1 - É possível excluir do total de processos recebidos, aqueles que não tiveram tramitação de fato no STF: com cancelamento de autuação, reautuados, devolvidos por impossibilidade de processamento ou retificados. Para excluí-los, basta selecionar a caixa no canto superior esquerdo do painel;
+
+2 - É possível selecionar um ou mais anos de recebimento;
+
+3 - É possível filtrar um ou mais meses para verificar o quantitativo de processos recebidos;
+
+4 - O painel permite que a lista com todos os dados sejam baixadas num link no canto superior direito no formato .xlsx ou .csv;
+
+5 - É ainda possível filtrar grupos de processos, conforme dimensões abaixo descritas.
+
+Tabela
+
+\hypertarget{registro-distribuicao}{%
+\chapter{Registro e Distribuição}\label{registro-distribuicao}}
+
+Registro à Presidência e distribuição aos ministros
+
+o total de processos recebidos, alguns têm o seguimento obstado pela Presidência, por atribuição regimental (arts. 13, V, c e d; 327, caput; e 328, parágrafo único, do RISTF): recursos que não preenchem requisitos formais de admissibilidade; que tratam de temas com repercussão geral já apreciada pelo STF; prejudicados em razão de decisão do STJ em recurso especial ou agravo interposto no mesmo processo.
+
+Outros são registrados ao presidente, porque só a ele competem (arts. 13, V, d, e XV; 70, § 4º; 278; 297; 351; e 354-A do RISTF): habeas corpus em que seja manifesta a incompetência do Tribunal para a apreciação do pedido e feitos das classes Arguição de Suspeição (AS), Intervenção Federal (IF), Proposta de Súmula Vinculante (PSV), Suspensão de Liminar (SL), Suspensão de Segurança (SS) e Suspensão de Tutela Antecipada (STA) --- esta desde dezembro de 2017 denominada Suspensão de Tutela Provisória (STP).
+
+\textbf{Os processos que não se enquadram nas hipóteses anteriores são distribuídos livremente ou por prevenção aos ministros, excetuado o presidente.}
+
+Em relação às estatísticas, a soma dos processos distribuídos e registrados à Presidência não coincide com o total de processos recebidos. Essa diferença corresponde às seguintes situações:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  processos recebidos mas ainda não distribuídos ou registrados;
+\item
+  retificações de autuações (processos repetidos --- duplicados, triplicados etc. ---, cujas cópias são baixadas à origem);
+\item
+  inconformidades para tramitação, como por exemplo, processos indevidamente remetidos ao STF, processos sem peças suficientes para a autuação ou remetidos mais de uma vez ao Tribunal;
+\item
+  situações em que o mesmo processo pode ter sido registrado à presidência e posteriormente distribuído.
+\end{enumerate}
+
+\textbf{Grupo de andamento Distribuição}
+
+\begin{tabular}{r|l}
+\hline
+Código & Andamento\\
+\hline
+7501 & Distribuído por exclusão de Ministro\\
+\hline
+7502 & Distribuído\\
+\hline
+7503 & Distribuído por prevenção\\
+\hline
+7504 & Distribuído por prevenção de Turma\\
+\hline
+7505 & Redistribuído\\
+\hline
+7506 & Registrado à Presidência\\
+\hline
+7508 & Substituição do Relator, art. 38 do RISTF\\
+\hline
+8509 & Substituição do Relator, art. 38, II, do RISTF\\
+\hline
+\end{tabular}
 
 \hypertarget{sharing-your-book}{%
 \chapter{Sharing your book}\label{sharing-your-book}}
@@ -813,8 +819,8 @@ Or use:
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{sharing-your-book-2}{%
-\chapter{Sharing your book}\label{sharing-your-book-2}}
+\hypertarget{sharing-your-book-now}{%
+\chapter{Sharing your book NOW}\label{sharing-your-book-now}}
 
 \hypertarget{publishing-2}{%
 \section{Publishing}\label{publishing-2}}
@@ -847,8 +853,8 @@ Or use:
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{sharing-your-book-now}{%
-\chapter{Sharing your book NOW}\label{sharing-your-book-now}}
+\hypertarget{baixados}{%
+\chapter{Baixados}\label{baixados}}
 
 \hypertarget{publishing-3}{%
 \section{Publishing}\label{publishing-3}}
@@ -881,8 +887,8 @@ Or use:
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{baixados}{%
-\chapter{Baixados}\label{baixados}}
+\hypertarget{sharing-your-book-2}{%
+\chapter{Sharing your book}\label{sharing-your-book-2}}
 
 \hypertarget{publishing-4}{%
 \section{Publishing}\label{publishing-4}}
@@ -964,40 +970,6 @@ By default, users will be directed to a 404 page if they try to access a webpage
 
 \hypertarget{metadata-for-sharing-6}{%
 \section{Metadata for sharing}\label{metadata-for-sharing-6}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{sharing-your-book-5}{%
-\chapter{Sharing your book}\label{sharing-your-book-5}}
-
-\hypertarget{publishing-7}{%
-\section{Publishing}\label{publishing-7}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages-7}{%
-\section{404 pages}\label{pages-7}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing-7}{%
-\section{Metadata for sharing}\label{metadata-for-sharing-7}}
 
 Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
 
