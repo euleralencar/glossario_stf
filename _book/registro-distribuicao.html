@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 6 Recebimento | Glossário estatístico (STF)</title>
+  <title>Capítulo 7 Registro e Distribuição | Glossário estatístico (STF)</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 6 Recebimento | Glossário estatístico (STF)" />
+  <meta property="og:title" content="Capítulo 7 Registro e Distribuição | Glossário estatístico (STF)" />
   <meta property="og:type" content="book" />
   
   
@@ -20,7 +20,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 6 Recebimento | Glossário estatístico (STF)" />
+  <meta name="twitter:title" content="Capítulo 7 Registro e Distribuição | Glossário estatístico (STF)" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -37,8 +37,8 @@ set in the _output.yml file.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="acervo.html"/>
-<link rel="next" href="registro-distribuicao.html"/>
+<link rel="prev" href="recebimento.html"/>
+<link rel="next" href="sharing-your-book.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -266,69 +266,121 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="recebimento" class="section level1" number="6">
-<h1><span class="header-section-number">Capítulo 6</span> <mark>Recebimento</mark></h1>
-<p>Recebimento de processos</p>
-<p>O <strong>processamento inicial começa com o recebimento e a autuação do processo</strong>. Consideram-se processos recebidos os ajuizados diretamente no STF, denominados “originários,” e também aqueles provenientes de outros juízos ou tribunais, chamados “recursais.”</p>
-<p>Do total de processos recebidos, parte tem seguimento obstado pela Presidência, por atribuição regimental (arts. 13, V, “c” e “d”; 327, caput; e 328, parágrafo único, do RISTF):</p>
-<ul>
-<li><p>recursos que não preenchem requisitos formais de admissibilidade;</p></li>
-<li><p>que tratam de temas com repercussão geral já apreciada pelo STF;</p></li>
-<li><p>prejudicados em razão de decisão do STJ em recurso especial ou agravo interposto no mesmo processo.</p></li>
-</ul>
-<p>Outra parte é registrada à Presidência (arts. 13, V, d, e XV; 70, § 4°; 278; 297; 351 e 354-A, do RISTF):</p>
-<ul>
-<li>habeas corpus em que seja manifesta a incompetência do tribunal para apreciação do pedido;</li>
-<li>feitos das classes Arguição de Suspeição (AS), Intervenção Federal (IF), Proposta de Súmula Vinculante (PSV), Suspensão de Liminar (SL), Suspensão de Segurança (SS) e Suspensão de Tutela Antecipada (STA).</li>
-</ul>
-<p>Os processos que não se enquadram nas hipóteses anteriores são objeto de distribuição, livre ou por prevenção, aos Ministros do Supremo, excetuado o Presidente.</p>
-<div id="regra-de-recebimento" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Regra de Recebimento</h2>
-<p>Os dados disponibilizados no painel utilizam como referência o campo data de primeiro ingresso do processo no STF independente do lançamento dos andamentos “protocolado” ou “autuado.”
-Neste painel estão contabilizados inclusive processos que não seguiram trâmite de fato no STF, como por exemplo: processos com cancelamento de autuação, reautuados, retificados ou devolvidos por impossibilidade de processamento. No painel, há um filtro para exclusão automática destes casos.
-Contudo petições avulsas ou incidentais que não são convertidas em processo, não são contabilizadas no recebimento. Para mais informações, <a href="recebimento.html#painel-recebimento">ver aqui</a>.</p>
-</div>
-<div id="painel-recebimento" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Painel de Recebimento</h2>
-<p>O objetivo é apresentar as principais dimensões do painel de recebimento disponibilizado no <a href="https://transparencia.stf.jus.br/single/?appid=b282ea92-29ef-4eeb-9676-2b9615ddfabd&amp;sheet=ef87c134-e282-47ac-8f8f-813754f74e76">Portal STF</a>.</p>
-<p><img src="imagens/fig-cap5-1.png" width="100%" /></p>
-<div id="taxonomia-do-painel" class="section level3" number="6.2.1">
-<h3><span class="header-section-number">6.2.1</span> Taxonomia do painel</h3>
-<p>O painel de acervo possui 9 filtros, além da possibilidade de utilizar gráficos e tabelas para outras seleções.</p>
-<p>1 - É possível excluir do total de processos recebidos, aqueles que não tiveram tramitação de fato no STF: com cancelamento de autuação, reautuados, devolvidos por impossibilidade de processamento ou retificados. Para excluí-los, basta selecionar a caixa no canto superior esquerdo do painel;</p>
-<p>2 - É possível selecionar um ou mais anos de recebimento;</p>
-<p>3 - É possível filtrar um ou mais meses para verificar o quantitativo de processos recebidos;</p>
-<p>4 - O painel permite que a lista com todos os dados sejam baixadas num link no canto superior direito no formato .xlsx ou .csv;</p>
-<p>5 - É ainda possível filtrar grupos de processos, conforme dimensões abaixo descritas.</p>
-<p><mark>Tabela</mark></p>
-<!-- ## Equations -->
-<!-- Here is an equation. -->
-<!-- \begin{equation}  -->
-<!--   f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k} -->
-<!--   (\#eq:binom) -->
-<!-- \end{equation}  -->
-<!-- You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom). -->
-<!-- ## Theorems and proofs -->
-<!-- Labeled theorems can be referenced in text using `\@ref(thm:tri)`, for example, check out this smart theorem \@ref(thm:tri). -->
-<!-- ::: {.theorem #tri} -->
-<!-- For a right triangle, if $c$ denotes the *length* of the hypotenuse -->
-<!-- and $a$ and $b$ denote the lengths of the **other** two sides, we have -->
-<!-- $$a^2 + b^2 = c^2$$ -->
-<!-- ::: -->
-<!-- Read more here <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>. -->
-<!-- ## Callout blocks -->
-<!-- The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html -->
+<div id="registro-distribuicao" class="section level1" number="7">
+<h1><span class="header-section-number">Capítulo 7</span> <mark>Registro e Distribuição</mark></h1>
+<p>Registro à Presidência e distribuição aos ministros</p>
+<p>o total de processos recebidos, alguns têm o seguimento obstado pela Presidência, por atribuição regimental (arts. 13, V, c e d; 327, caput; e 328, parágrafo único, do RISTF): recursos que não preenchem requisitos formais de admissibilidade; que tratam de temas com repercussão geral já apreciada pelo STF; prejudicados em razão de decisão do STJ em recurso especial ou agravo interposto no mesmo processo.</p>
+<p>Outros são registrados ao presidente, porque só a ele competem (arts. 13, V, d, e XV; 70, § 4º; 278; 297; 351; e 354-A do RISTF): habeas corpus em que seja manifesta a incompetência do Tribunal para a apreciação do pedido e feitos das classes Arguição de Suspeição (AS), Intervenção Federal (IF), Proposta de Súmula Vinculante (PSV), Suspensão de Liminar (SL), Suspensão de Segurança (SS) e Suspensão de Tutela Antecipada (STA) — esta desde dezembro de 2017 denominada Suspensão de Tutela Provisória (STP).</p>
+<p><strong>Os processos que não se enquadram nas hipóteses anteriores são distribuídos livremente ou por prevenção aos ministros, excetuado o presidente.</strong></p>
+<p>Em relação às estatísticas, a soma dos processos distribuídos e registrados à Presidência não coincide com o total de processos recebidos. Essa diferença corresponde às seguintes situações:</p>
+<ol style="list-style-type: decimal">
+<li><p>processos recebidos mas ainda não distribuídos ou registrados;</p></li>
+<li><p>retificações de autuações (processos repetidos — duplicados, triplicados etc. —, cujas cópias são baixadas à origem);</p></li>
+<li><p>inconformidades para tramitação, como por exemplo, processos indevidamente remetidos ao STF, processos sem peças suficientes para a autuação ou remetidos mais de uma vez ao Tribunal;</p></li>
+<li><p>situações em que o mesmo processo pode ter sido registrado à presidência e posteriormente distribuído.</p></li>
+</ol>
+<p><strong>Grupo de andamento Distribuição</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right;">
+Código
+</th>
+<th style="text-align:left;">
+Andamento
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+7501
+</td>
+<td style="text-align:left;">
+Distribuído por exclusão de Ministro
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7502
+</td>
+<td style="text-align:left;">
+Distribuído
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7503
+</td>
+<td style="text-align:left;">
+Distribuído por prevenção
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7504
+</td>
+<td style="text-align:left;">
+Distribuído por prevenção de Turma
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7505
+</td>
+<td style="text-align:left;">
+Redistribuído
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7506
+</td>
+<td style="text-align:left;">
+Registrado à Presidência
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7508
+</td>
+<td style="text-align:left;">
+Substituição do Relator, art. 38 do RISTF
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8509
+</td>
+<td style="text-align:left;">
+Substituição do Relator, art. 38, II, do RISTF
+</td>
+</tr>
+</tbody>
+</table>
+<!-- ## Publishing -->
+<!-- HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html -->
+<!-- ## 404 pages -->
+<!-- By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax. -->
+<!-- ## Metadata for sharing -->
+<!-- Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used. -->
+<!-- This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same. -->
+<!-- Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file.  -->
+<!-- Read more about the features of this output format here: -->
+<!-- https://pkgs.rstudio.com/bookdown/reference/gitbook.html -->
+<!-- Or use: -->
+<!-- ```{r eval=FALSE} -->
+<!-- ?bookdown::gitbook -->
+<!-- ``` -->
 
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="acervo.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="registro-distribuicao.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="recebimento.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sharing-your-book.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -359,7 +411,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/05-recebimento.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-registro_distribuicao.Rmd",
 "text": "Edit"
 },
 "history": {

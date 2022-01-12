@@ -1,30 +1,79 @@
-# Recebimento {#recebimento}
+# <mark>Recebimento</mark> {#recebimento}
 
-## Equations
+Recebimento de processos
 
-Here is an equation.
+O **processamento inicial começa com o recebimento e a autuação do processo**. Consideram-se processos recebidos os ajuizados diretamente no STF, denominados “originários”, e também aqueles provenientes de outros juízos ou tribunais, chamados “recursais”.
 
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  (\#eq:binom)
-\end{equation} 
+Do total de processos recebidos, parte tem seguimento obstado pela Presidência, por atribuição regimental (arts. 13, V, “c” e “d”; 327, caput; e 328, parágrafo único, do RISTF): 
 
-You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom).
+- recursos que não preenchem requisitos formais de admissibilidade;
+
+- que tratam de temas com repercussão geral já apreciada pelo STF; 
+
+- prejudicados em razão de decisão do STJ em recurso especial ou agravo interposto no mesmo processo.
+
+Outra parte é registrada à Presidência (arts. 13, V, d, e XV; 70, § 4°; 278; 297; 351 e 354-A, do RISTF): 
+
+- habeas corpus em que seja manifesta a incompetência do tribunal para apreciação do pedido; 
+- feitos das classes Arguição de Suspeição (AS), Intervenção Federal (IF), Proposta de Súmula Vinculante (PSV), Suspensão de Liminar (SL), Suspensão de Segurança (SS) e Suspensão de Tutela Antecipada (STA).
+
+Os processos que não se enquadram nas hipóteses anteriores são objeto de distribuição, livre ou por prevenção, aos Ministros do Supremo, excetuado o Presidente.
+
+## Regra de Recebimento
+
+Os dados disponibilizados no painel utilizam como referência o campo data de primeiro ingresso do processo no STF independente do lançamento dos andamentos “protocolado” ou “autuado”.
+Neste painel estão contabilizados inclusive processos que não seguiram trâmite de fato no STF, como por exemplo: processos com cancelamento de autuação, reautuados, retificados ou devolvidos por impossibilidade de processamento. No painel, há um filtro para exclusão automática destes casos. 
+Contudo petições avulsas ou incidentais que não são convertidas em processo, não são contabilizadas no recebimento. Para mais informações, [ver aqui](#painel-recebimento ).
+
+## Painel de Recebimento {#painel-recebimento}
+
+O objetivo é apresentar as principais dimensões do painel de recebimento disponibilizado no [Portal STF](https://transparencia.stf.jus.br/single/?appid=b282ea92-29ef-4eeb-9676-2b9615ddfabd&sheet=ef87c134-e282-47ac-8f8f-813754f74e76).
 
 
-## Theorems and proofs
+```{r echo=FALSE, out.width = '100%', dpi = 300}
+knitr::include_graphics("imagens/fig-cap5-1.png")
+```
 
-Labeled theorems can be referenced in text using `\@ref(thm:tri)`, for example, check out this smart theorem \@ref(thm:tri).
+### Taxonomia do painel
+O painel de acervo possui 9 filtros, além da possibilidade de utilizar gráficos e tabelas para outras seleções. 
 
-::: {.theorem #tri}
-For a right triangle, if $c$ denotes the *length* of the hypotenuse
-and $a$ and $b$ denote the lengths of the **other** two sides, we have
-$$a^2 + b^2 = c^2$$
-:::
+1 - É possível excluir do total de processos recebidos, aqueles que não tiveram tramitação de fato no STF:  com cancelamento de autuação, reautuados, devolvidos por impossibilidade de processamento ou retificados. Para excluí-los, basta selecionar a caixa no canto superior esquerdo do painel;
 
-Read more here <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>.
+2 - É possível selecionar um ou mais anos de recebimento;
 
-## Callout blocks
+3 - É possível filtrar um ou mais meses para verificar o quantitativo de processos recebidos;
+
+4 - O painel permite que a lista com todos os dados sejam baixadas num link no canto superior direito no formato .xlsx ou .csv;
+
+5 - É ainda possível filtrar grupos de processos, conforme dimensões abaixo descritas.
+
+<mark>Tabela</mark>
+
+<!-- ## Equations -->
+
+<!-- Here is an equation. -->
+
+<!-- \begin{equation}  -->
+<!--   f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k} -->
+<!--   (\#eq:binom) -->
+<!-- \end{equation}  -->
+
+<!-- You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom). -->
 
 
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html
+<!-- ## Theorems and proofs -->
+
+<!-- Labeled theorems can be referenced in text using `\@ref(thm:tri)`, for example, check out this smart theorem \@ref(thm:tri). -->
+
+<!-- ::: {.theorem #tri} -->
+<!-- For a right triangle, if $c$ denotes the *length* of the hypotenuse -->
+<!-- and $a$ and $b$ denote the lengths of the **other** two sides, we have -->
+<!-- $$a^2 + b^2 = c^2$$ -->
+<!-- ::: -->
+
+<!-- Read more here <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>. -->
+
+<!-- ## Callout blocks -->
+
+
+<!-- The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html -->

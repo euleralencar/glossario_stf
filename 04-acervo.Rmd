@@ -25,14 +25,14 @@ Há processos que já tiveram decisão final mas permanecem em tramitação porq
 No site podemos consultar o histórico dos processos em tramitação através do link <mark>"ACERVO 2020"</mark>.
 
 ```{r echo=FALSE, out.width = '100%', dpi = 300}
-knitr::include_graphics("_bookdown_files/_main_files/figure-html/fig-cap4-1.png")
+knitr::include_graphics("imagens/fig-cap4-1.png")
 ```
 
 
 Será aberto um painel com os dados registrados nos relatórios de atividades de anos anteriores ([link](https://transparencia.stf.jus.br/single/?appid=e554950b-d244-487b-991d-abcc693bfa7c&sheet=ea8942c2-79fa-494f-bf18-ca6d5a3bfb43&theme=simplicity&opt=currsel&select=clearall)):
 
 ```{r echo=FALSE, out.width = '100%', dpi = 300}
-knitr::include_graphics("_bookdown_files/_main_files/figure-html/fig-cap4-2.png")
+knitr::include_graphics("imagens/fig-cap4-2.png")
 ```
 
 Detalhamento do acervo pode ser obtido através do painel de acervo.
@@ -103,14 +103,14 @@ Ainda que os despachos sejam irrecorríveis, pode ocorrer de uma das partes inte
 
 O julgamento do processo é identificado pela decisão final, mas cada feito pode ter mais de uma decisão. As decisões podem ser monocráticas ou colegiadas e são classificadas, no STF, em:
 
-<ol>
-<li>decisões liminares; </li>
-<li>decisões interlocutórias; </li>
-<li>decisões de sobrestamento^[Sobrestamento: é a suspensão do trâmite processual até o implemento de determinada condição.]; </li>
-<li>decisões finais; </li>
-<li>decisões de repercussão geral; e </li>
-<li>decisões em recurso interno (agravo regimental, embargos de declaração, embargos infringentes e embargos de divergência). </li>
-</ol>
+
+1. decisões liminares; 
+1. decisões interlocutórias; 
+1. decisões de sobrestamento^[Sobrestamento: é a suspensão do trâmite processual até o implemento de determinada condição.]; 
+1. decisões finais; 
+1. decisões de repercussão geral; e 
+1. decisões em recurso interno (agravo regimental, embargos de declaração, embargos infringentes e embargos de divergência). 
+
 
 Decisões liminares e decisões de sobrestamento, ainda que interlocutórias, receberam, no Tribunal, classificação própria, para fins estatísticos. 
 
@@ -138,7 +138,6 @@ Ou seja, o processo constará no acervo de determinado Ministro, quando o proces
 
 ```{r echo=FALSE, warning=FALSE}
 cap4_1 <- readxl::read_excel("dados/cap4.xlsx", sheet = "acervo_4-1")
-
 cap4_1 |> 
 kableExtra::kable()
 ```
@@ -147,7 +146,7 @@ kableExtra::kable()
 **Regra geral**
 
 ```{r echo=FALSE, out.width = '100%', fig.cap="Fluxo simplificado da substituição de relatoria para os casos do  art. 38, II, do RISTF.", dpi = 300, display="cite"}
-knitr::include_graphics("_bookdown_files/_main_files/figure-html/fig-cap4-3.png")
+knitr::include_graphics("imagens/fig-cap4-3.png")
 ```
 
 
