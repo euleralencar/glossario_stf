@@ -75,3 +75,14 @@ sharing-your-book-5
 publishing-7
 pages-7
 metadata-for-sharing-7
+url-your-book-url-like-httpsbookdown.orgyihuibookdown
+historia
+estatística-no-stf
+início
+aprimoramento-da-base-de-dados
+novas-ferramentas
+regra-de-recebimento
+painel-recebimento
+taxonomia-do-painel
+registro-distribuicao
+fig:unnamed-chunk-4

@@ -1,31 +1,57 @@
-# Sharing your book
+# <mark>Registro e Distribuição</mark> {#registro-distribuicao}
 
-## Publishing
+Registro à Presidência e distribuição aos ministros
 
-HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html
+o total de processos recebidos, alguns têm o seguimento obstado pela Presidência, por atribuição regimental (arts. 13, V, c e d; 327, caput; e 328, parágrafo único, do RISTF): recursos que não preenchem requisitos formais de admissibilidade; que tratam de temas com repercussão geral já apreciada pelo STF; prejudicados em razão de decisão do STJ em recurso especial ou agravo interposto no mesmo processo. 
 
-## 404 pages
+Outros são registrados ao presidente, porque só a ele competem (arts. 13, V, d, e XV; 70, § 4º; 278; 297; 351; e 354-A do RISTF): habeas corpus em que seja manifesta a incompetência do Tribunal para a apreciação do pedido e feitos das classes Arguição de Suspeição (AS), Intervenção Federal (IF), Proposta de Súmula Vinculante (PSV), Suspensão de Liminar (SL), Suspensão de Segurança (SS) e Suspensão de Tutela Antecipada (STA) — esta desde dezembro de 2017 denominada Suspensão de Tutela Provisória (STP). 
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax.
+**Os processos que não se enquadram nas hipóteses anteriores são distribuídos livremente ou por prevenção aos ministros, excetuado o presidente.**
 
-## Metadata for sharing
+Em relação às estatísticas, a soma dos processos distribuídos e registrados à Presidência não coincide com o total de processos recebidos. Essa diferença corresponde às seguintes situações: 
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used.
+1. processos recebidos mas ainda não distribuídos ou registrados; 
 
+1. retificações de autuações (processos repetidos — duplicados, triplicados etc. —, cujas cópias são baixadas à origem);
 
+1. inconformidades para tramitação, como por exemplo, processos indevidamente remetidos ao STF, processos sem peças suficientes para a autuação ou remetidos mais de uma vez ao Tribunal;
 
-This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same.
+1. situações em que o mesmo processo pode ter sido registrado à presidência e posteriormente distribuído.
 
-Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file. 
+**Grupo de andamento Distribuição**
 
-Read more about the features of this output format here:
-
-https://pkgs.rstudio.com/bookdown/reference/gitbook.html
-
-Or use:
-
-```{r eval=FALSE}
-?bookdown::gitbook
+```{r echo=FALSE, warning=FALSE}
+cap6_1 <- readxl::read_excel("dados/cap6.xlsx", sheet = "acervo_6-1")
+cap6_1 |> 
+kableExtra::kable()
 ```
+
+<!-- ## Publishing -->
+
+<!-- HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html -->
+
+<!-- ## 404 pages -->
+
+<!-- By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax. -->
+
+<!-- ## Metadata for sharing -->
+
+<!-- Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used. -->
+
+
+
+<!-- This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same. -->
+
+<!-- Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file.  -->
+
+<!-- Read more about the features of this output format here: -->
+
+<!-- https://pkgs.rstudio.com/bookdown/reference/gitbook.html -->
+
+<!-- Or use: -->
+
+<!-- ```{r eval=FALSE} -->
+<!-- ?bookdown::gitbook -->
+<!-- ``` -->
 
 
