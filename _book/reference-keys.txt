@@ -1,4 +1,4 @@
-fig:unnamed-chunk-13
+fig:unnamed-chunk-17
 sobre
 como-usar
 render-book
@@ -24,6 +24,8 @@ andamentos-que-colocam-um-processo-em-trâmite
 andamentos-que-retiram-um-processo-de-trâmite
 histórico-do-acervo
 painel-do-acervo
+taxonomia-do-painel
+dados-abertos
 entenda-o-acervo
 conceitos-do-acervo
 acervo-processual
@@ -37,12 +39,13 @@ situação-dos-processos
 sem-decisão-final
 em-instrução-sem-decisão
 com-alguma-decisão-exceto-decisão-final
-regra-de-relatoria-do-processo
+regra-relatoria
 recebimento
 regra-de-recebimento
 painel-recebimento
-taxonomia-do-painel
+taxonomia-do-painel-1
 registro-distribuicao
+painel-de-distribuição-aos-ministros-e-registrado-à-presidência
 sharing-your-book
 publishing
 pages

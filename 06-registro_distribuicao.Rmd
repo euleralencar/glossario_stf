@@ -2,7 +2,7 @@
 
 Registro à Presidência e distribuição aos ministros
 
-o total de processos recebidos, alguns têm o seguimento obstado pela Presidência, por atribuição regimental (arts. 13, V, c e d; 327, caput; e 328, parágrafo único, do RISTF): recursos que não preenchem requisitos formais de admissibilidade; que tratam de temas com repercussão geral já apreciada pelo STF; prejudicados em razão de decisão do STJ em recurso especial ou agravo interposto no mesmo processo. 
+Do total de processos recebidos, alguns têm o seguimento obstado pela Presidência, por atribuição regimental (arts. 13, V, c e d; 327, caput; e 328, parágrafo único, do RISTF): recursos que não preenchem requisitos formais de admissibilidade; que tratam de temas com repercussão geral já apreciada pelo STF; prejudicados em razão de decisão do STJ em recurso especial ou agravo interposto no mesmo processo. 
 
 Outros são registrados ao presidente, porque só a ele competem (arts. 13, V, d, e XV; 70, § 4º; 278; 297; 351; e 354-A do RISTF): habeas corpus em que seja manifesta a incompetência do Tribunal para a apreciação do pedido e feitos das classes Arguição de Suspeição (AS), Intervenção Federal (IF), Proposta de Súmula Vinculante (PSV), Suspensão de Liminar (SL), Suspensão de Segurança (SS) e Suspensão de Tutela Antecipada (STA) — esta desde dezembro de 2017 denominada Suspensão de Tutela Provisória (STP). 
 
@@ -26,32 +26,14 @@ cap6_1 |>
 kableExtra::kable()
 ```
 
-<!-- ## Publishing -->
+## Painel de distribuição aos Ministros e Registrado à Presidência
 
-<!-- HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html -->
+<mark>[Figura]</mark>
 
-<!-- ## 404 pages -->
+Do total de processos recebidos, alguns são registrados à Presidência por atribuição regimental e outros são distribuídos aos ministros.
 
-<!-- By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax. -->
+**Taxonomia do Painel**
 
-<!-- ## Metadata for sharing -->
+O painel de Registrados à Presidência e Distribuídos aos Ministros possui 8 filtros, além da disponibilidade de utilizar gráficos e tabelas para outras seleções.
 
-<!-- Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used. -->
-
-
-
-<!-- This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same. -->
-
-<!-- Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file.  -->
-
-<!-- Read more about the features of this output format here: -->
-
-<!-- https://pkgs.rstudio.com/bookdown/reference/gitbook.html -->
-
-<!-- Or use: -->
-
-<!-- ```{r eval=FALSE} -->
-<!-- ?bookdown::gitbook -->
-<!-- ``` -->
-
-
+<mark>Parei aqui!</mark>
