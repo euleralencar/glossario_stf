@@ -30,7 +30,6 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="SGE" />
 
 
-<meta name="date" content="2022-01-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -49,6 +48,7 @@ set in the _output.yml file.</p>" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
 
 
 
@@ -146,8 +146,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#como-usar"><i class="fa fa-check"></i><b>1.1</b> Como usar</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.2</b> Render book</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#preview-book"><i class="fa fa-check"></i><b>1.3</b> Preview book</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="introdução-versão-beta.html"><a href="introdução-versão-beta.html"><i class="fa fa-check"></i><b>2</b> Introdução (versão beta)</a>
 <ul>
@@ -156,7 +154,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="introdução-versão-beta.html"><a href="introdução-versão-beta.html#an-unnumbered-section"><i class="fa fa-check"></i>An unnumbered section</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="historia.html"><a href="historia.html"><i class="fa fa-check"></i><b>3</b> <mark>História das estatísticas no STF</mark></a>
+<li class="chapter" data-level="3" data-path="historia.html"><a href="historia.html"><i class="fa fa-check"></i><b>3</b> <mark>História das estatísticas no STF </mark></a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="historia.html"><a href="historia.html#estatística-no-stf"><i class="fa fa-check"></i><b>3.1</b> Estatística no STF</a>
 <ul>
@@ -291,7 +289,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Read more about the features of this output format here:</p>
 <p><a href="https://pkgs.rstudio.com/bookdown/reference/gitbook.html" class="uri">https://pkgs.rstudio.com/bookdown/reference/gitbook.html</a></p>
 <p>Or use:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="baixados.html#cb6-1" aria-hidden="true" tabindex="-1"></a>?bookdown<span class="sc">::</span>gitbook</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="baixados.html#cb4-1" aria-hidden="true" tabindex="-1"></a>?bookdown<span class="sc">::</span>gitbook</span></code></pre></div>
 
 </div>
 </div>
@@ -305,6 +303,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -332,8 +331,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/10-baixados.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,
@@ -343,10 +342,11 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf", "_main.epub"],
+"download": ["_main.pub"],
 "search": {
-"engine": "fuse",
-"options": null
+"engine": "lunr",
+"options": null,
+"info": false
 },
 "toc": {
 "collapse": "subsection"

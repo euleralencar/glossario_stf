@@ -18,7 +18,7 @@ Cada uma dessas dimensões está destrinchada em painéis específicos, podendo 
 
 As classes processuais estão previstas no art. 55 do Regimento Interno do Supremo Tribunal Federal (RISTF), com atualização da Resolução 604/2017 e são divididas entre recursais e originárias e . São classes recursais o recurso extraordinário (RE), o recurso extraordinário com agravo (ARE) e o agravo de instrumento (AI). São classes originárias todas as demais, incluídos os recursos ordinários.  Atualmente, as classes recursais estão submetidas ao regime da **repercussão geral**, criado pela [Emenda Constitucional n° 45/2004](http://www.planalto.gov.br/ccivil_03/Constituicao/Emendas/Emc/emc45.htm#art9) e regulamentado pelos arts. 1.035 e 1.036 do Novo Código de Processo Civil, na redação dada pela [Lei 13.256/2016](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Lei/L13256.htm#art3).
 
-A Resolução 604/2017 atualiza as classes processuais e os incidentes disponíveis para autuação e registro de processos no Supremo Tribunal Federal.
+A [Resolução 604/2017](http://www.stf.jus.br/ARQUIVO/NORMA/RESOLUCAO604-2017.PDF) atualiza as classes processuais e os incidentes disponíveis para autuação e registro de processos no Supremo Tribunal Federal.
 
 ### Classes Processuais
 

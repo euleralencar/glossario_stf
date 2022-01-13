@@ -131,7 +131,7 @@
 
 \title{Glossário estatístico (STF)}
 \author{SGE}
-\date{2022-01-12}
+\date{2022-01-13}
 
 \begin{document}
 \maketitle
@@ -1510,15 +1510,105 @@ Código & Andamento\\
 \hypertarget{painel-de-distribuiuxe7uxe3o-aos-ministros-e-registrado-uxe0-presiduxeancia}{%
 \section{Painel de distribuição aos Ministros e Registrado à Presidência}\label{painel-de-distribuiuxe7uxe3o-aos-ministros-e-registrado-uxe0-presiduxeancia}}
 
-{[}Figura{]}
-
 Do total de processos recebidos, alguns são registrados à Presidência por atribuição regimental e outros são distribuídos aos ministros.
+
+\includegraphics[width=1\linewidth]{imagens/fig-cap6-1}
 
 \textbf{Taxonomia do Painel}
 
 O painel de Registrados à Presidência e Distribuídos aos Ministros possui 8 filtros, além da disponibilidade de utilizar gráficos e tabelas para outras seleções.
 
-Parei aqui!
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}@{}}
+\toprule
+Dimensão & Definição \\
+\midrule
+\endhead
+Período da Distribuição & Seleciona um período entre datas específicas. \\
+Ano da Distribuição & Filtra o ano em que o processo foi distribuído. \\
+Tramitação & Dos processos que foram distribuídos mostra aqueles que ainda estão em tramitação ou não \\
+Tipo de distribuição & Classifica se o processo foi distribuído para o Ministro Presidente ou demais Ministros \\
+Andamento & Esse filtro mostra em quais Subgrupos estão divididas as distribuições \\
+Incluir Substituição e/ou Redistribuição & Inclui no painel aqueles casos que tiveram a Substituição e/ou Redistribuição de um relator por outro Ministro \\
+Nome Ministro(a) & Ministro que foi registrado na distribuição. Nesse filtro, ao selecionar um Ministro, será selecionado a quantidades de processos Distribuídos aos Ministros e/ou Registrados à Presidência. \\
+\textbf{Grupo de Classe} & As classes foram agrupadas em quatro subgrupos, conforme abaixo: \textbf{1. Controle Concentrado:} 1. Processos das classes Ação Declaratória de Constitucionalidade (ADC);2. Ação Direta de Inconstitucionalidade (ADI);3. Ação Direta de Inconstitucionalidade por Omissão (ADO); 4. Arguição de Descumprimento de Preceito Fundamental (ADPF). \textbf{2.Criminais\footnote{As classes criminais referem-se a classes de processos tipicamente criminais, como HC. Não incluem processos de outras classes que recebem marcação interna de preferência criminal.}:} 1. Processos das classes Ação Penal (AP); 2. Execução de Pena (EP); 3. Extensão (Ext); 4. Habeas Corpus (HC); 5. Inquérito (Inq); 6. Prisão Preventiva para Extradição (PPE); 7. Recurso Crime (RC); 8. Recurso em Habeas Corpus (RHC); e 9. Revisão Criminal (RvC). \textbf{3. Recursais:} 1. Recurso extraordinário (RE); 2. Recurso extraordinário com agravo (ARE); e 3. Agravo de instrumento (AI). \textbf{4. Demais originárias:} Todas as classes originárias, exceto controle concentrado e criminais. \\
+\bottomrule
+\end{longtable}
+
+\textbf{Dados Abertos}
+
+O painel permite que os dados sejam baixados num link no canto superior direito:
+
+\includegraphics[width=1\linewidth]{imagens/fig-cap6-2}
+As variáveis possíveis de serem consultados pelo XLSX:
+
+\begin{tabular}{l|l}
+\hline
+Variável & Definição\\
+\hline
+Id Processo & Chave numérica única para cada processo.\\
+\hline
+Classe & Sigla da classe do processo no STF.\\
+\hline
+Número & Número do processo no STF.\\
+\hline
+Nome Ministro (a) & Informa para qual Ministro o processo foi distribuído\\
+\hline
+Data Andamento & Data em que o processo foi distribuído\\
+\hline
+Qtd Ocorrências Processuais & Informa a quantidade de ocorrências em cada andamento processual.\\
+\hline
+Andamento & Descreve qual andamento foi lançado no ato da distribuição.\\
+\hline
+Classificação STF & Recursal ou originária\\
+\hline
+Subgrupo Andamento & Informa a qual Subgrupo o andamento pertence.\\
+\hline
+\end{tabular}
+
+\textbf{Tutoriais do Painel}
+
+\begin{tabular}{l|l}
+\hline
+Nome do gráfico e/ou tabela & Definição\\
+\hline
+Registrados e Distribuídos & Quantitativos geral dos processos registrados à Presidência e distribuídos aos Ministros\\
+\hline
+Registro à Presidência & Quantitativo dos processos registrados à Presidência\\
+\hline
+Distribuídos aos Ministros & Quantitativo dos processos distribuídos aos Ministros\\
+\hline
+Distribuídos e Registrados à Presidência & Gráfico em linha dos processos distribuídos por ano\\
+\hline
+Processos pro classe & Gráfico em barra dos processos por classe processual\\
+\hline
+Processos Distribuídos aos Ministros & Gráfico em barra da distribuição por ministro\\
+\hline
+Gráfico pizza & Distribuição por processo recursal ou originário\\
+\hline
+Processos por ramo do direito & Mapa de árvore da distribuição por ramo do direito\\
+\hline
+Processos Distribuídos por órgão origem & Tabela dos processos distribuídos aos Ministros por órgão origem\\
+\hline
+Processo Registrados por órgão origem & Tabela dos processos registrados à Presidência por órgão origem\\
+\hline
+\end{tabular}
+
+De modo geral, para filtrar algum gráfico ou tabela selecione um ou mais valores e depois confirme o filtro no botão verde conforme indicado na imagem abaixo:
+
+\hypertarget{r-echofalse-out.width-100-dpi-300-knitrinclude_graphicsimagensfig-cap6-3.gif}{%
+\chapter{\texorpdfstring{\texttt{\{r\ echo=FALSE,\ out.width\ =\ \textquotesingle{}100\%\textquotesingle{},\ dpi\ =\ 300\}\ \#\ knitr::include\_graphics("imagens/fig-cap6-3.gif")\ \#}}{\{r echo=FALSE, out.width = '100\%', dpi = 300\} \# knitr::include\_graphics("imagens/fig-cap6-3.gif") \#}}\label{r-echofalse-out.width-100-dpi-300-knitrinclude_graphicsimagensfig-cap6-3.gif}}
+
+Para limpar os filtros de todo o painel basta clicar no botão ``limpar filtros'' no canto superior direito:
+
+\hypertarget{r-echofalse-out.width-100-dpi-300-knitrinclude_graphicsimagensfig-cap6-4.gif}{%
+\chapter{\texorpdfstring{\texttt{\{r\ echo=FALSE,\ out.width\ =\ \textquotesingle{}100\%\textquotesingle{},\ dpi\ =\ 300\}\ \#\ knitr::include\_graphics("imagens/fig-cap6-4.gif")\ \#}}{\{r echo=FALSE, out.width = '100\%', dpi = 300\} \# knitr::include\_graphics("imagens/fig-cap6-4.gif") \#}}\label{r-echofalse-out.width-100-dpi-300-knitrinclude_graphicsimagensfig-cap6-4.gif}}
+
+Segue abaixo uma visão geral do painel, filtros, tabelas e gráficos:
+
+\hypertarget{r-echofalse-out.width-100-dpi-300-knitrinclude_graphicsimagensfig-cap6-5.gif}{%
+\chapter{\texorpdfstring{\texttt{\{r\ echo=FALSE,\ out.width\ =\ \textquotesingle{}100\%\textquotesingle{},\ dpi\ =\ 300\}\ \#\ knitr::include\_graphics("imagens/fig-cap6-5.gif")\ \#}}{\{r echo=FALSE, out.width = '100\%', dpi = 300\} \# knitr::include\_graphics("imagens/fig-cap6-5.gif") \#}}\label{r-echofalse-out.width-100-dpi-300-knitrinclude_graphicsimagensfig-cap6-5.gif}}
 
 \hypertarget{sharing-your-book}{%
 \chapter{Sharing your book}\label{sharing-your-book}}

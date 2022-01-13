@@ -1,8 +1,6 @@
-fig:unnamed-chunk-17
+fig:unnamed-chunk-14
 sobre
 como-usar
-render-book
-preview-book
 introdução-versão-beta
 a-section
 historia
