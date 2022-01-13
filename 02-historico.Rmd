@@ -1,4 +1,4 @@
-# <mark>História das estatísticas no STF</mark> {#historia}
+# <mark>História das estatísticas no STF </mark> {#historia}
 
 
 ## Estatística no STF
@@ -6,51 +6,31 @@
 ### Início
 
 O sistema de estatística judiciária do Supremo Tribunal Federal organizou-se formalmente em 2004, por meio da Resolução nº 284/2004, em razão da necessidade imperiosa de fazer uso de instrumentos capazes de instruir o planejamento e a gerência da atividade jurisdicional, além de lhe agregar transparência. 
+
 Desde então, muitas foram as ações que se seguiram para o aprimoramento da base de dados que serve à estatística, para torná-la consistente e fidedigna. Nesse sentido, a padronização, a simplificação e a eleição de registros que possam ser pesquisáveis são os atributos mais importantes para o alcance desse objetivo. 
+
 Dentre os dados processuais, os “andamentos” merecem relevo: a partir deles, muito se pode extrair no que diz respeito a indicadores que já se tornaram comuns no dia a dia dos órgãos jurisdicionais, como, por exemplo, as taxas de congestionamento, e de recorribilidade. 
 
 ### Aprimoramento da base de dados 
 
 A tabela de andamentos processuais é objeto de estudo pelo Tribunal desde 2003, quando se diagnosticou que suas inadequações estruturais eram responsáveis por inconsistências nos relatórios estatísticos do Tribunal. 
+
 A partir da verificação de que muitos andamentos tão só repetiam de forma diversa a mesma situação processual, teve lugar a primeira grande medida de higienização dessa tabela, visando à padronização dos lançamentos. Em 2007, a antiga tabela, que continha 488 andamentos, foi substituída por nova versão, com 257 andamentos. 
+
 Outra ação importante, iniciada na mesma época, foi o detalhamento dos dados passíveis de agregar valor às informações da Corte. Nesse sentido, as decisões passaram a ser identificadas por espécie, (inicialmente subdivididas em finais, interlocutórias e liminares) para permitir gestão efetiva da atividade jurisdicional. 
+
 Em 2011, porque vencidas as primeiras etapas, voltou-se o Tribunal para um trabalho sistemático de gestão da informação propriamente dita, que compreende: a formulação de regras que orientam os usuários responsáveis pelos registros; e, de forma inédita, a correção e adequação dos registros já existentes.  
+
 A decisão de adequar registros anteriores quase sempre é descartada por quem administra dados, eis que é extremamente trabalhosa. No entanto, os resultados trazidos por tal procedimento são também bastante positivos. Trata-se de permitir a análise comparativa das atividades do Tribunal, em exercícios anteriores, a partir do mesmo grau de refinamento alcançado a cada etapa do trabalho, ainda que esse resgate denote desempenho menos satisfatório, conforme o olhar do observador ou analista. Noutras palavras, o compromisso do gestor de dados deve ser com sua fidedignidade e transparência. 
+
 Dados precisos permitem que pesquisadores e acadêmicos tenham extensas possibilidades de análise da atividade jurisdicional, o que só a aprimora. 
+
 Apenas nos últimos três meses de 2011, mais de 180 mil andamentos, lançados a partir de 2008, foram revistos, corrigidos ou adequados. 
+
 Em 2016, a partir da análise de auditoria interna no sistema de informação gerencial, foram identificadas novas inconsistências no registro de andamentos processuais. Visando a melhor definição da situação do processo, para permitir a extração de dados para o planejamento da gestão da celeridade da prestação jurisdicional, redefiniram-se grupos e subgrupos de andamentos processuais, com revisão de mais de 1.000 processos. 
 
 ### Novas ferramentas
 
 Ainda em 2016, para facilitar a extração de informações, foram criados mais de 30 painéis estatísticos, que utilizam ferramenta de Business Intelligence (BI). Por meio deles, são possíveis a padronização e a automatização da busca de informações do acervo processual, como, por exemplo: tempo médio de tramitação, taxa de recorribilidade, acervo e produção por gabinete em data certa, produção de gabinete por período definido e processos com vistas devolvidas.
+
 Em virtude de questões tecnológicas, o Business Intelligence permitia visualização de relatórios apenas pelo Internet Explorer. Por isso, no âmbito do projeto "Transparência aos Dados", em 2018, o portal da estatística foi reformulado. Neste novo modelo, os painéis, já disponibilizados no sistema anterior, foram organizados de forma prática utilizando a ferramenta Qlik Sense. Estão divididos por temas como acervo, pauta do Plenário e das Turmas, decisões (monocráticas e colegiadas), trabalho remoto e julgamentos virtuais, entre outros. Ao clicar no item Pauta do Plenário, por exemplo, há estatísticas sobre total de processos, quantidade daqueles com vista pendente e divisão entre Plenário Virtual e Presencial, por relator e por classes processuais. Os dados podem ser consultados em qualquer browser, inclusive no celular e as informações estão mais intuitivas e amigáveis, em formato de dados abertos e atualizadas sem intervenção manual.
-
-
-<!-- There are two steps to cross-reference any heading: -->
-
-<!-- 1. Label the heading: `# Hello world {#nice-label}`.  -->
-<!--     - Leave the label off if you like the automated heading generated based on your heading title: for example, `# Hello world` = `# Hello world {#hello-world}`. -->
-<!--     - To label an un-numbered heading, use: `# Hello world {-#nice-label}` or `{# Hello world .unnumbered}`. -->
-
-<!-- 1. Next, reference the labeled heading anywhere in the text using `\@ref(nice-label)`; for example, please see Chapter \@ref(cross).  -->
-<!--     - If you prefer text as the link instead of a numbered reference use: [any text you want can go here](#cross). -->
-
-<!-- ## Captioned figures and tables -->
-
-<!-- Figures and tables *with captions* can also be cross-referenced from elsewhere in your book using `\@ref(fig:chunk-label)` and `\@ref(tag:chunk-label)`, respectively. -->
-
-<!-- See Figure \@ref(fig:nice-fig). -->
-
-<!-- ```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center', fig.alt='Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases.'} -->
-<!-- par(mar = c(4, 4, .1, .1)) -->
-<!-- plot(pressure, type = 'b', pch = 19) -->
-<!-- ``` -->
-
-<!-- Don't miss Table \@ref(tab:nice-tab). -->
-
-<!-- ```{r nice-tab, tidy=FALSE} -->
-<!-- knitr::kable( -->
-<!--   head(pressure, 10), caption = 'Here is a nice table!', -->
-<!--   booktabs = TRUE -->
-<!-- ) -->
-<!-- ``` -->
