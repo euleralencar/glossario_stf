@@ -1,31 +1,39 @@
-# Baixados {#baixados}
+# Baixados 
 
-## Publishing
+## Do Processamento Final
 
-HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html
+Nesta etapa, ocorre a baixa do processo, que é o marco final da tramitação e representa o momento em que se encerram todas as atividades (jurisdicionais e cartorárias) do processo no âmbito do STF.
 
-## 404 pages
+Este é o ato que marca o momento em que todas as determinações constantes na sentença foram cumpridas pelas partes litigantes. Pode promover o arquivamento do processo ou remessa para outro juízo ou tribunal.
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax.
+É seguido de atividades cartorárias, como registro da baixa definitiva do processo pelo serviço de distribuição e a respectiva exclusão do nome das partes nas certidões judiciais de distribuição.
 
-## Metadata for sharing
+Esta etapa embora correlacionada, não se confunde com o **Trânsito em Julgado**. Esse é o momento no qual não cabe mais recurso, seja ordinário ou extraordinário. Na prática, trata-se um adjetivo aplicado a uma decisão que não pode sofrer reforma, ou seja, que não pode mais ser modificada.
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used.
+## Regra de Baixa
 
+A quantidade de processos baixados corresponde ao total de processos distintos fora de tramitação na data da execução do relatório, que tenham a data da baixa no ano de referência. O ministro responsável pela baixa será registrado como o **relator do último incidente**.
 
+>Pergunta: é isso mesmo? Relator do último andamento ou relator do último incidente? [STI]
 
-This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same.
+A Data da Baixa corresponde à data do primeiro andamento que retirou o processo de tramitação e que, após este andamento não ocorreu lançamento de andamento em que o processo voltasse a tramitar.
 
-Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file. 
+>Pergunta:  todos esses movimentos dão baixa a um processo ou só retiram de trâmite? [STI]
 
-Read more about the features of this output format here:
+**Andamentos que retiram um processo de trâmite**
 
-https://pkgs.rstudio.com/bookdown/reference/gitbook.html
-
-Or use:
-
-```{r eval=FALSE}
-?bookdown::gitbook
+```{r echo=FALSE, message=FALSE, warning=FALSE, include = TRUE, fig.showtext = TRUE, error=FALSE}
+library(readxl)
+library(dplyr)
+library(tidyverse)
+library(stringi)
+library(showtext)
+tabela_1_baixados = read_excel("dados/tabela_1_baixados.xlsx")
+tabela_1_baixados %>%
+    knitr::kable(align = "l") %>% 
+    kableExtra::kable_styling(full_width = F,latex_options = "HOLD_position",font_size = 14)
 ```
 
+## Painel de Baixados
 
+O painel de processos é o mesmo do painel de processos recebidos. Ver [aqui](https://euleralencar.gitbook.io/glossario-estatistico-bk_2021_11_26/dimensoes/recebimento/painel-de-recebimento).

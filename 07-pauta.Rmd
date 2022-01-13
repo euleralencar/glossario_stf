@@ -1,31 +1,68 @@
-# Sharing your book
+# Processos Pautados
 
-## Publishing
+## Processos Pautados
+São os processos que foram liberados para pauta de julgamentos em um dos colegiados. Uma vez designada a data para julgamento do processo, ele constará do Calendário de julgamentos bem como será gerado andamento processual.
 
-HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html
+As informações sobre processos em pauta podem ser consultadas no "Painel da pauta" [aqui](https://transparencia.stf.jus.br/single/?appid=1dc722ab-891b-4ae9-9ee5-94f7800ac874&sheet=191cc290-f75b-43d9-9957-37903c87cd90&select=Orgao_Julgador,Plen%C3%A1rio).
+São contabilizados, em geral, os processos com andamento de "Inclua-se em pauta - minuta extraída".
 
-## 404 pages
+## Julgamento nos órgãos colegiados 
+Os processos instruídos pelo Relator são liberados para julgamento por meio de inclusão do feito em pauta ou apresentação em mesa, nas hipóteses regimentais. Compete ao Presidente do órgão colegiado selecionar, dentre os processos liberados para julgamento, aqueles que serão julgados na sessão.
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax.
+Após a leitura do voto pelo Relator, o Presidente do órgão concederá a palavra aos advogados e ao Procurador-Geral da República para fins de sustentação oral, quando cabível. Proferido o voto do Relator, passa-se à votação do colegiado, que seguirá a ordem crescente de antiguidade no Tribunal.
 
-## Metadata for sharing
+## Pedido de Vista
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used.
+Qualquer Ministro pode pedir vista dos autos para melhor análise da demanda. É possível que o pedido de vista ocorra a qualquer momento, durante o julgamento do processo, ficando suspenso o julgamento até a devolução da vista e novo agendamento em Calendário.
+
+**Obs.:** O andamento "apresentado em mesa de julgamento" inclui processos apenas nas pautas das turmas, com o parâmetro “origem da decisão COLEGIADA”. A apresentação em mesa também é possível no Plenário.
+
+## Inclusão na lista de processos pautados
+
+Lançamento dos seguintes andamentos:
 
 
-
-This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file. 
-
-Read more about the features of this output format here:
-
-https://pkgs.rstudio.com/bookdown/reference/gitbook.html
-
-Or use:
-
-```{r eval=FALSE}
-?bookdown::gitbook
+```{r echo=FALSE, message=FALSE, warning=FALSE, include = TRUE, fig.showtext = TRUE, error=FALSE}
+library(readxl)
+library(dplyr)
+library(tidyverse)
+library(stringi)
+library(showtext)
+tabela_1_pauta = read_excel("dados/tabela_1_pauta.xlsx")
+tabela_1_pauta %>%
+    knitr::kable(align = "l") %>% 
+    kableExtra::kable_styling(full_width = F,latex_options = "HOLD_position",font_size = 14)
 ```
 
+>O andamento "apresentado em mesa de julgamento" inclui processos apenas nas pautas das turmas, com o parâmetro “origem da decisão COLEGIADA”.
 
+>O parâmetro que informa a pauta de qual colegiado o processo será incluído nos andamentos 7601 e 1117 é a “origem da decisão COLEGIADA” no andamento ou a observação do andamento com os textos (“Pleno”, “Primeira Turma”, “1ª Turma”, etc..)
+
+## Exclusão da lista de processos pautados
+
+Na exclusão, o processo NÃO possuir lançamentos dos seguintes andamentos, após algum dos últimos andamentos de inclusão citados acima.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include = TRUE, fig.showtext = TRUE, error=FALSE}
+library(readxl)
+library(dplyr)
+library(tidyverse)
+library(stringi)
+library(showtext)
+tabela_2_pauta = read_excel("dados/tabela_2_pauta.xlsx")
+tabela_2_pauta %>%
+    knitr::kable(align = "l") %>% 
+    kableExtra::kable_styling(full_width = F,latex_options = "HOLD_position",font_size = 14)
+```
+
+## Painel da Pauta
+
+O painel de da pauta possui 6 filtros, além da possibilidade de utilizar gráficos e tabelas para realizar outras seleções. 
+
+| Dimensão | Definição |
+| :----------| :---------|
+| **Grupo Classe** | As classes foram agrupadas em quatro subgrupos, conforme abaixo:<br>**1. Controle Concentrado:**<br> 1. Processos das classes Ação Declaratória de Constitucionalidade (ADC); <br> 2. Ação Direta de Inconstitucionalidade (ADI); <br> 3. Ação Direta de Inconstitucionalidade por Omissão (ADO); <br>4. Arguição de Descumprimento de Preceito Fundamental (ADPF). <br>**2. Criminais:**<br> 1.Processos das classes Ação Penal (AP); <br> 2.Execução de Pena (EP); <br> 3.Extensão (Ext); <br> 4.Habeas Corpus (HC); <br> 5.Inquérito (Inq); <br> 6.Prisão Preventiva para Extradição (PPE);<br> 7.Recurso Crime (RC); <br> 8.Recurso em Habeas Corpus (RHC); e <br> 9.Revisão Criminal (RvC).<br>**3. Recursais:** <br> 1.Recurso extraordinário (RE);<br> 2.Recurso extraordinário com agravo (ARE); e <br> 3.Agravo de instrumento (AI). <br>**4. Demais originárias:** Todas as classes originárias, exceto controle concentrado e criminais.|
+| **Relator do Processo** | Quando processo é recebido, ele é registrado à Presidência ou é distribuído a um Ministro. A partir dai é designado o relator do Processo, ou seja, o ministro responsável pelo julgamento do mérito ou pela relatoria do último incidente. Neste filtro, ao selecionar um ministro, será selecionado o acervo de processos sob sua relatoria. | 
+|**Classe do Processo** | As classes processuais são divididas, no STF, entre recursais e originárias. São classes recursais o recurso extraordinário (RE), o recurso extraordinário com agravo (ARE) e o agravo de instrumento (AI). São classes originárias todas as demais, incluídos os recursos ordinários. Atualmente, as classes recursais estão submetidas ao regime da repercussão geral, criado pela Emenda Constitucional n° 45/2004 e regulamentado pela Lei n° 11.418/2006, que acrescentou, ao CPC, os artigos 543-A e 543-B. Para ver mais, [clique aqui](https://app.gitbook.com/@glossario/s/glossario/~/drafts/-MegelAClcCRkkC6ve2p/v/master/introducao/o-que-e-possivel-pesquisar/classes-processuais)| 
+|**Ramo do direito**|O direito pode ser classificado em vários ramos, de acordo com o que versa o assunto. Neste filtro, é possível selecionar um dos ramos do direito o qual se refere o assunto do processo.|
+|**Assunto**|O assunto do processo é uma especialização do Ramo do Direito.|
+|**Físico ou Eletrônico**|Verifica se o processo recebido é físico ou eletrônico. Atualmente há menos de 1% de processos físicos.|

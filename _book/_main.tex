@@ -6,8 +6,8 @@
 ]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{iftex}
-\ifPDFTeX
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -123,7 +123,7 @@
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 \usepackage{xcolor}
-\ifLuaTeX
+\ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
@@ -131,7 +131,7 @@
 
 \title{Glossário estatístico (STF)}
 \author{SGE}
-\date{2022-01-12}
+\date{2022-01-13}
 
 \begin{document}
 \maketitle
@@ -201,28 +201,17 @@ Esse avanço se deu também com aproximação da sociedade através do fortaleci
 
 A Corte avançou significativamente na Transparência de seus dados. Ainda em 2018, o Tribunal lançou Resolução 613/2018 que regulamenta a aplicação, no âmbito do Supremo Tribunal Federal, da Lei nº 12.527/2011, que versa sobre o acesso à informação. Os dados estão disponíveis no site:
 
-{[}Figura{]}
+\begin{center}\includegraphics[width=1.1\linewidth,height=1.3\textheight]{imagens/imagem_1_introducao} \end{center}
 
 Ainda neste sentido, pensando na Transparência de dados judiciais, o portal da Estatística (\url{http://portal.stf.jus.br/estatistica/}) foi reformulado com o objetivo de trazer dados atualizados diariamente para seu jurisdicionado de maneira interativa, amigável e intuitiva.
 
+\begin{center}\includegraphics[width=1.1\linewidth,height=1.3\textheight]{imagens/imagem_2_introducao} \end{center}
+
 A página da estatística procura trazer os principais resultados de forma resumida numa primeira página e possibilita o detalhamento da informação utilizando o botão ``VER MAIS''.
 
-{[}Figura{]}
+\begin{center}\includegraphics[width=1.1\linewidth,height=1.3\textheight]{imagens/imagem_3_introducao} \end{center}
 
 O documento a seguir tem como objetivo documentar a definição e critérios das principais estatísticas judiciais da Corte disponíveis no site e mostrar algumas funcionalidades.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
-
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
-
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
-
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
 
 \hypertarget{historia}{%
 \chapter{História das estatísticas no STF}\label{historia}}
@@ -626,7 +615,7 @@ Código & Andamento\\
 \textbf{Regra geral}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{imagens/fig-cap4-3} \caption{Fluxo simplificado da substituição de relatoria para os casos do  art. 38, II, do RISTF.}\label{fig:unnamed-chunk-13}
+\includegraphics[width=1\linewidth]{imagens/fig-cap4-3} \caption{Fluxo simplificado da substituição de relatoria para os casos do  art. 38, II, do RISTF.}\label{fig:unnamed-chunk-16}
 \end{figure}
 
 Casos de substituição de relatoria para efeitos de acervo:
@@ -751,6 +740,442 @@ Código & Andamento\\
 \hline
 \end{tabular}
 
+\hypertarget{processos-pautados}{%
+\chapter{Processos Pautados}\label{processos-pautados}}
+
+\hypertarget{processos-pautados-1}{%
+\section{Processos Pautados}\label{processos-pautados-1}}
+
+São os processos que foram liberados para pauta de julgamentos em um dos colegiados. Uma vez designada a data para julgamento do processo, ele constará do Calendário de julgamentos bem como será gerado andamento processual.
+
+As informações sobre processos em pauta podem ser consultadas no ``Painel da pauta'' \href{https://transparencia.stf.jus.br/single/?appid=1dc722ab-891b-4ae9-9ee5-94f7800ac874\&sheet=191cc290-f75b-43d9-9957-37903c87cd90\&select=Orgao_Julgador,Plen\%C3\%A1rio}{aqui}.
+São contabilizados, em geral, os processos com andamento de ``Inclua-se em pauta - minuta extraída''.
+
+\hypertarget{julgamento-nos-uxf3rguxe3os-colegiados}{%
+\section{Julgamento nos órgãos colegiados}\label{julgamento-nos-uxf3rguxe3os-colegiados}}
+
+Os processos instruídos pelo Relator são liberados para julgamento por meio de inclusão do feito em pauta ou apresentação em mesa, nas hipóteses regimentais. Compete ao Presidente do órgão colegiado selecionar, dentre os processos liberados para julgamento, aqueles que serão julgados na sessão.
+
+Após a leitura do voto pelo Relator, o Presidente do órgão concederá a palavra aos advogados e ao Procurador-Geral da República para fins de sustentação oral, quando cabível. Proferido o voto do Relator, passa-se à votação do colegiado, que seguirá a ordem crescente de antiguidade no Tribunal.
+
+\hypertarget{pedido-de-vista}{%
+\section{Pedido de Vista}\label{pedido-de-vista}}
+
+Qualquer Ministro pode pedir vista dos autos para melhor análise da demanda. É possível que o pedido de vista ocorra a qualquer momento, durante o julgamento do processo, ficando suspenso o julgamento até a devolução da vista e novo agendamento em Calendário.
+
+\textbf{Obs.:} O andamento ``apresentado em mesa de julgamento'' inclui processos apenas nas pautas das turmas, com o parâmetro ``origem da decisão COLEGIADA''. A apresentação em mesa também é possível no Plenário.
+
+\hypertarget{inclusuxe3o-na-lista-de-processos-pautados}{%
+\section{Inclusão na lista de processos pautados}\label{inclusuxe3o-na-lista-de-processos-pautados}}
+
+Lançamento dos seguintes andamentos:
+
+\begin{table}[H]
+\centering\begingroup\fontsize{14}{16}\selectfont
+
+\begin{tabular}{l|l}
+\hline
+Código & Andamento\\
+\hline
+7601 & Inclua-se em pauta - minuta extraída\\
+\hline
+1117 & INCLUA-SE EM PAUTA - MINUTA EXTRAÍDA (desativado)\\
+\hline
+7600 & Apresentado em mesa para julgamento*\\
+\hline
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\begin{quote}
+O andamento ``apresentado em mesa de julgamento'' inclui processos apenas nas pautas das turmas, com o parâmetro ``origem da decisão COLEGIADA''.
+\end{quote}
+
+\begin{quote}
+O parâmetro que informa a pauta de qual colegiado o processo será incluído nos andamentos 7601 e 1117 é a ``origem da decisão COLEGIADA'' no andamento ou a observação do andamento com os textos (``Pleno'', ``Primeira Turma'', ``1ª Turma'', etc..)
+\end{quote}
+
+\hypertarget{exclusuxe3o-da-lista-de-processos-pautados}{%
+\section{Exclusão da lista de processos pautados}\label{exclusuxe3o-da-lista-de-processos-pautados}}
+
+Na exclusão, o processo NÃO possuir lançamentos dos seguintes andamentos, após algum dos últimos andamentos de inclusão citados acima.
+
+\begin{table}[H]
+\centering\begingroup\fontsize{14}{16}\selectfont
+
+\begin{tabular}{l|l}
+\hline
+Código & Andamento\\
+\hline
+29 & Andamentos do grupo “decisão liminar”\\
+\hline
+27 & Andamentos do grupo “decisão final” com origem da decisão Colegiada\\
+\hline
+28 & Andamentos do grupo de “decisão interlocutória” com origem da decisão Colegiada\\
+\hline
+54 & Andamentos do grupo de “decisão Rep. Geral” com origem da decisão Colegiada\\
+\hline
+76 & Andamentos do grupo de “decisão em recurso interno” com “origem da decisão Colegiada\\
+\hline
+8521 & Retirado de Julgamento Virtual com o texto “Pedido de Destaque” na observação do andamento\\
+\hline
+1115 & Retirado de pauta\\
+\hline
+7204 & Retirado de pauta\\
+\hline
+6220 & Extinto o processo\\
+\hline
+8547 & Pedido de Destaque\\
+\hline
+7203 & Retirado de mesa\\
+\hline
+2055 & Transitado(a) em julgado\\
+\hline
+8219 & Transitado(a) em julgado\\
+\hline
+7103 & Baixa ao arquivo do STF\\
+\hline
+6215 & DECLINADA COMPETENCIA\\
+\hline
+7108 & REMESSA AO JUIZO COMPETENTE\\
+\hline
+2309 & processo findo\\
+\hline
+7106 & processo findo\\
+\hline
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\hypertarget{painel-da-pauta}{%
+\section{Painel da Pauta}\label{painel-da-pauta}}
+
+O painel de da pauta possui 6 filtros, além da possibilidade de utilizar gráficos e tabelas para realizar outras seleções.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+\toprule
+Dimensão & Definição \\
+\midrule
+\endhead
+\textbf{Grupo Classe} & As classes foram agrupadas em quatro subgrupos, conforme abaixo:\textbf{1. Controle Concentrado:} 1. Processos das classes Ação Declaratória de Constitucionalidade (ADC); 2. Ação Direta de Inconstitucionalidade (ADI); 3. Ação Direta de Inconstitucionalidade por Omissão (ADO); 4. Arguição de Descumprimento de Preceito Fundamental (ADPF). \textbf{2. Criminais:} 1.Processos das classes Ação Penal (AP); 2.Execução de Pena (EP); 3.Extensão (Ext); 4.Habeas Corpus (HC); 5.Inquérito (Inq); 6.Prisão Preventiva para Extradição (PPE); 7.Recurso Crime (RC); 8.Recurso em Habeas Corpus (RHC); e 9.Revisão Criminal (RvC).\textbf{3. Recursais:} 1.Recurso extraordinário (RE); 2.Recurso extraordinário com agravo (ARE); e 3.Agravo de instrumento (AI). \textbf{4. Demais originárias:} Todas as classes originárias, exceto controle concentrado e criminais. \\
+\textbf{Relator do Processo} & Quando processo é recebido, ele é registrado à Presidência ou é distribuído a um Ministro. A partir dai é designado o relator do Processo, ou seja, o ministro responsável pelo julgamento do mérito ou pela relatoria do último incidente. Neste filtro, ao selecionar um ministro, será selecionado o acervo de processos sob sua relatoria. \\
+\textbf{Classe do Processo} & As classes processuais são divididas, no STF, entre recursais e originárias. São classes recursais o recurso extraordinário (RE), o recurso extraordinário com agravo (ARE) e o agravo de instrumento (AI). São classes originárias todas as demais, incluídos os recursos ordinários. Atualmente, as classes recursais estão submetidas ao regime da repercussão geral, criado pela Emenda Constitucional n° 45/2004 e regulamentado pela Lei n° 11.418/2006, que acrescentou, ao CPC, os artigos 543-A e 543-B. Para ver mais, \href{https://app.gitbook.com/@glossario/s/glossario/~/drafts/-MegelAClcCRkkC6ve2p/v/master/introducao/o-que-e-possivel-pesquisar/classes-processuais}{clique aqui} \\
+\textbf{Ramo do direito} & O direito pode ser classificado em vários ramos, de acordo com o que versa o assunto. Neste filtro, é possível selecionar um dos ramos do direito o qual se refere o assunto do processo. \\
+\textbf{Assunto} & O assunto do processo é uma especialização do Ramo do Direito. \\
+\textbf{Físico ou Eletrônico} & Verifica se o processo recebido é físico ou eletrônico. Atualmente há menos de 1\% de processos físicos. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{decisuxf5es}{%
+\chapter{Decisões}\label{decisuxf5es}}
+
+\hypertarget{decisuxe3o}{%
+\section{Decisão}\label{decisuxe3o}}
+
+Os atos processuais do magistrado podem ser divididos em dois grupos: despachos e decisões. Nos Tribunais as decisões devem, em regra, ser proferidas de forma colegiada.
+
+Os Ministros, no entanto, tem competência legal e regimental para, em hipóteses determinadas, proferir decisões de forma monocrática, ou seja, individualmente, sem levar ao órgão colegiado (Plenário, Plenário Virtual e Turmas).
+
+As decisões colegiadas dos Tribunais são denominadas acórdãos. O julgamento é o ato de decidir o processo e o acórdão é o documento escrito, composto pelo relatório e pelos votos de todos os Ministros que tenham participado do julgamento, que é efetivamente juntado ao processo.
+
+\hypertarget{despacho}{%
+\section{Despacho}\label{despacho}}
+
+Os despachos são atos do magistrado que servem para dar impulso ao processo (ex.: pedido de informações a autoridades ou a outros juízos, encaminhamento à PGR para parecer, determinação de citação, intimação ou outras diligências) e não são recorríveis.
+
+\hypertarget{acuxf3rduxe3o}{%
+\section{Acórdão}\label{acuxf3rduxe3o}}
+
+Os julgamentos dos órgãos colegiados são realizados oralmente, de forma que os votos proferidos por cada magistrado devem ser reduzidos a termo para que sejam publicados e juntados ao processo. Essa circunstância leva à ocorrência, nos Tribunais, de uma separação temporal entre o momento do julgamento e o momento da composição do acordão.
+
+A extensão desse lapso não está relacionada, necessariamente, à extensão dos votos. São compostos mais rapidamente os acórdãos formados por votos que os Ministros já tenham levado escritos para a sessão de julgamento. É mais lenta, por sua vez, a composição daqueles que exijam a transcrição da sessão de julgamento, porque o texto resultante deve ser revisto e aprovado pelos Ministros.
+
+Nos relatórios estatísticos, as decisões colegiadas equivalem ao julgamento em sessão colegiada, independentemente do tempo que se leve para compor e publicar o acórdão.
+
+\hypertarget{julgamento-nos-uxf3rguxe3os-colegiados-1}{%
+\section{Julgamento nos órgãos colegiados}\label{julgamento-nos-uxf3rguxe3os-colegiados-1}}
+
+Os processos instruídos pelo Relator são liberados para julgamento, por meio de inclusão do feito em pauta ou apresentação em mesa, nas hipóteses regimentais (independe de inclusão em pauta o julgamento de habeas corpus, mandados de segurança e recursos internos(colocar link depois)).
+
+Compete ao Presidente do órgão colegiado em que ocorrerá o julgamento selecionar, dentre os processos liberados, aqueles que serão julgados na sessão. Habeas corpus e mandados de segurança têm preferência sobre as demais classes na pauta de julgamento.
+
+Após a leitura do voto pelo Relator, o Presidente do órgão concede a palavra aos advogados que farão sustentação oral, se houver, e, posteriormente, ao Procurador-Geral da República, nas causas em que deva se manifestar.
+
+Proferido o voto do Relator, passa-se à votação do colegiado, que seguirá a ordem crescente de antiguidade no Tribunal.
+
+\hypertarget{pedido-de-vista-1}{%
+\section{Pedido de vista}\label{pedido-de-vista-1}}
+
+Qualquer Ministro, excetuando-se o Relator, pode pedir vista dos autos, para melhor análise da demanda. É possível que tal pedido ocorra a qualquer momento, independentemente da ordem de votação.
+
+O julgamento é suspenso até posterior liberação dos autos pelo Ministro que formulou o pedido e chamamento do feito, pelo Presidente do colegiado, em nova sessão.
+
+\hypertarget{painel-de-decisuxf5es}{%
+\section{Painel de Decisões}\label{painel-de-decisuxf5es}}
+
+O objetivo é apresentar as principais funcionalidades do painel de decisões do STF, disponível neste \href{https://transparencia.stf.jus.br/single/?appid=1f9aa2cf-d569-4e98-bd2a-a9dac4e79a69\&sheet=3490ef1f-f90e-4b51-9b93-b578efd54efd\&theme=simplicity\&opt=currsel\&select=clearall}{link}
+
+\begin{center}\includegraphics[width=0.8\linewidth,height=0.95\textheight]{imagens/imagem_1_decisoes} \end{center}
+
+Trata-se de um painel desenvolvido no âmbito do projeto institucional de Transparência de Dados, que possibilita ao cidadão obter informações variadas sobre decisões, em diversas naturezas de filtro. A tecnologia principal utilizada para confecção do painel (QlikSense) permite conexão direta com a base de dados, de forma que regras para a atualização do painel foram definidas a priori. Atualmente, as informações são atualizadas no seguinte intervalo:
+
+\hypertarget{taxonomia-do-painel-1}{%
+\section{Taxonomia do Painel}\label{taxonomia-do-painel-1}}
+
+O painel de decisões possui 7 filtros básicos, cujas combinações permitem a extração de informações sobre o período de decisão, orgão julgador e grupo de classe, dentre outras opções. Os filtros serão melhor explicados na sequência. Abaixo temos um exemplo de filtro:
+
+\begin{center}\includegraphics[width=0.8\linewidth,height=0.95\textheight]{imagens/imagem_2_decisoes} \end{center}
+
+O painel de acervo possui 6 filtros, além da possibilidade de utilizar gráficos e tabelas para outras seleções.
+As dimensões dos filtros utilizados no painel são descritas abaixo:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.52}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.48}}@{}}
+\toprule
+Dimensão & Definição \\
+\midrule
+\endhead
+\textbf{Grupo Classe} & As classes foram agrupadas em quatro subgrupos, conforme abaixo:\textbf{1. Controle Concentrado:} 1. Processos das classes Ação Declaratória de Constitucionalidade (ADC); 2. Ação Direta de Inconstitucionalidade (ADI); 3. Ação Direta de Inconstitucionalidade por Omissão (ADO); 4. Arguição de Descumprimento de Preceito Fundamental (ADPF). \textbf{2. Criminais:} 1.Processos das classes Ação Penal (AP); 2.Execução de Pena (EP); 3.Extensão (Ext); 4.Habeas Corpus (HC); 5.Inquérito (Inq); 6.Prisão Preventiva para Extradição (PPE); 7.Recurso Crime (RC); 8.Recurso em Habeas Corpus (RHC); e 9.Revisão Criminal (RvC).\textbf{3. Recursais:} 1.Recurso extraordinário (RE); 2.Recurso extraordinário com agravo (ARE); e 3.Agravo de instrumento (AI). \textbf{4. Demais originárias:} Todas as classes originárias, exceto controle concentrado e criminais. \\
+\textbf{Nome Ministro(a)} & Neste filtro, ao selecionar um ministro, serão selecionadas as decisões proferidas. Os itens deste filtro são os nomes dos ministros atuais e já aposentados da corte. \\
+\textbf{Ambiente de decisão} & Filtro para separar decisões proferidas em ambientes virtuais ou presenciais. \\
+\textbf{Colegiada ou Monocrática} & Filtro para separar decisões monocráticas e decisões tomadas em turmas ou no plenário.Se a distinção entre as decisões colegiadas for necessária -- isto é, decisões em turmas ou em plenário -- basta utilizar o filtro que segue. \\
+\textbf{Orgão Julgador} & Generalização do filtro anterior. É possível escolher entre decisões monocráticas, em turmas ou em plenário. \\
+\textbf{Período de decisão} & Filtro útil para selecionar intervalos específicos de tempo. Granular em dias, permite também a seleção por mês atual, mês anterior, últimos 7 dias ou em um intervalo definido por duas datas quaisquer. \\
+\bottomrule
+\end{longtable}
+
+Os dados gerados a partir dos filtros podem ser baixados através do botão destacado na figura abaixo, em formato xlsx.
+
+\begin{center}\includegraphics[width=0.8\linewidth,height=0.95\textheight]{imagens/imagem_3_decisoes} \end{center}
+
+As colunas do arquivo gerado são as seguintes:
+
+\textbf{1) Processo} - Classe e número do processo
+
+\textbf{2) Nome Ministro} -- Nome do Ministro responsável pela decisão.
+
+\textbf{3) Tipo Decisão} -- Monocrática ou Colegiada.
+
+\textbf{4) Ambiente de Decisão} -- Virtual, Presencial ou Não se Aplica.
+
+\textbf{5) Orgão Julgador} -- Igual ao Nome Ministro, no caso de decisões monocráticas. Para decisões colegiadas, retorna a turma ou o plenário.
+
+\textbf{6) Andamento} -- Descrição do andamento da decisão.
+
+\textbf{7) Data Andamento} -- Data de registro do andamento.
+
+\textbf{8) Subgrupo Andamento} -- Seguintes categorias: Decisão Final, Decisão Interlocutória, Decisão em Recurso Interno, Decisão de Sobrestamento, Decisão Liminar e Decisão de Repercussão Geral.
+
+\textbf{9) Observação do Andamento} -- Texto livre que funciona como um resumo sobre a decisão.
+
+\textbf{10) Ocorrências Processuais} -- Variável numérica que conta o número de vezes que um determinado processo teve decisões associadas. A análise desta variável é importante para que as quantidades, de fato, sejam as mesmas apresentadas no painel. Em resumo, no arquivo são retiradas as duplicidades que são observadas em painel.
+
+\hypertarget{recursos-internos-1}{%
+\chapter{Recursos Internos}\label{recursos-internos-1}}
+
+Após a decisão, pode haver a interposição de agravo regimental ou a oposição de embargos de declaração ou de divergência. Nesses casos, o processo será concluso ao relator para que o recurso interno seja julgado. Se a decisão embargada for de uma Turma, os embargos de divergência serão distribuídos a ministro da outra; se a decisão objeto dos embargos for do Plenário, serão excluídos da distribuição o relator e o revisor. O julgamento não corresponde à efetiva finalização do processo, que se consuma apenas com a baixa definitiva deste.
+A \href{http://www.stf.jus.br/ARQUIVO/NORMA/RESOLUCAO604-2017.PDF}{Resolução 604/2017} atualiza as classes e os incidentes disponíveis para autuação e registro de processos no Supremo Tribunal Federal.
+
+\hypertarget{tabela-de-recursos-internos}{%
+\section{Tabela de Recursos Internos}\label{tabela-de-recursos-internos}}
+
+\begin{table}[H]
+\centering\begingroup\fontsize{14}{16}\selectfont
+
+\begin{tabular}{l|l}
+\hline
+Recursos & Descrição\\
+\hline
+AgR & Agravo Regimental\\
+\hline
+ED & Embargos de Declaração\\
+\hline
+EDv & Embargos Divergentes\\
+\hline
+EI & Embargos Infringentes\\
+\hline
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\hypertarget{baixados}{%
+\chapter{Baixados}\label{baixados}}
+
+\hypertarget{do-processamento-final}{%
+\section{Do Processamento Final}\label{do-processamento-final}}
+
+Nesta etapa, ocorre a baixa do processo, que é o marco final da tramitação e representa o momento em que se encerram todas as atividades (jurisdicionais e cartorárias) do processo no âmbito do STF.
+
+Este é o ato que marca o momento em que todas as determinações constantes na sentença foram cumpridas pelas partes litigantes. Pode promover o arquivamento do processo ou remessa para outro juízo ou tribunal.
+
+É seguido de atividades cartorárias, como registro da baixa definitiva do processo pelo serviço de distribuição e a respectiva exclusão do nome das partes nas certidões judiciais de distribuição.
+
+Esta etapa embora correlacionada, não se confunde com o \textbf{Trânsito em Julgado}. Esse é o momento no qual não cabe mais recurso, seja ordinário ou extraordinário. Na prática, trata-se um adjetivo aplicado a uma decisão que não pode sofrer reforma, ou seja, que não pode mais ser modificada.
+
+\hypertarget{regra-de-baixa}{%
+\section{Regra de Baixa}\label{regra-de-baixa}}
+
+A quantidade de processos baixados corresponde ao total de processos distintos fora de tramitação na data da execução do relatório, que tenham a data da baixa no ano de referência. O ministro responsável pela baixa será registrado como o \textbf{relator do último incidente}.
+
+\begin{quote}
+Pergunta: é isso mesmo? Relator do último andamento ou relator do último incidente? {[}STI{]}
+\end{quote}
+
+A Data da Baixa corresponde à data do primeiro andamento que retirou o processo de tramitação e que, após este andamento não ocorreu lançamento de andamento em que o processo voltasse a tramitar.
+
+\begin{quote}
+Pergunta: todos esses movimentos dão baixa a um processo ou só retiram de trâmite? {[}STI{]}
+\end{quote}
+
+\textbf{Andamentos que retiram um processo de trâmite}
+
+\begin{table}[H]
+\centering\begingroup\fontsize{14}{16}\selectfont
+
+\begin{tabular}{l|l|l}
+\hline
+Código & Andamento & Classes\\
+\hline
+7002 & Remessa indevida & Todas\\
+\hline
+7101 & Remessa externa dos autos & Todas\\
+\hline
+7102 & Autos restaurados & Todas\\
+\hline
+7103 & Baixa ao arquivo do STF & Todas\\
+\hline
+7104 & Baixa definitiva dos autos & Todas\\
+\hline
+7105 & Cancelamento de autuação & Todas\\
+\hline
+7106 & Processo findo & Todas\\
+\hline
+7107 & Reautuado & Todas\\
+\hline
+7108 & Remessa dos autos ao juízo competente & Todas\\
+\hline
+7109 & Autos devolvidos à origem & Todas\\
+\hline
+7111 & Devolução por impossibilidade de processamento & Todas\\
+\hline
+7112 & Baixa dos autos - distribuição cancelada & Todas\\
+\hline
+7113 & Processo recebido na origem & Todas\\
+\hline
+7312 & Comunicado provimento de agravo & Todas\\
+\hline
+8210 & Autos entregues ao advogado & Todas\\
+\hline
+8233 & Apensado ao Processo nº & PPE, AI, AC\\
+\hline
+8241 & Agravo de Instrumento apensado ao RE nº & Todas\\
+\hline
+8248 & Retificação de autuação & Todas\\
+\hline
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\hypertarget{painel-de-baixados}{%
+\section{Painel de Baixados}\label{painel-de-baixados}}
+
+O painel de processos é o mesmo do painel de processos recebidos. Ver \href{https://euleralencar.gitbook.io/glossario-estatistico-bk_2021_11_26/dimensoes/recebimento/painel-de-recebimento}{aqui}.
+
+\hypertarget{repercussuxe3o-geral}{%
+\chapter{Repercussão Geral}\label{repercussuxe3o-geral}}
+
+\hypertarget{o-instituto-da-repercussuxe3o-geral}{%
+\section{O Instituto da Repercussão Geral}\label{o-instituto-da-repercussuxe3o-geral}}
+
+O recurso extraordinário interposto perante os tribunais ou turmas recursais dos juizados especiais, é o meio processual por meio do qual o Supremo Tribunal Federal analisa, através do controle difuso de constitucionalidade, qualquer contrariedade aos dispositivos da Constituição Federal.
+
+As hipóteses de cabimento do recurso extraordinário estão previstas no art. 102, III, da Constituição Federal, sendo que a Emenda Constitucional n.~45/04 incluiu o § 3º neste artigo, acrescentando aos demais requisitos de admissibilidade, que a questão constitucional discutida no recurso deve ter repercussão geral.
+
+Por sua vez, o art. 1.035 do CPC estabelece que para fins da repercussão geral, deve ser considerada a existência de questões relevantes do ponto de vista econômico, político, social ou jurídico que ultrapassem os interesses subjetivos do processo.
+
+Dessa forma, a decisão do Supremo Tribunal Federal em repercussão geral vinculará os demais órgãos do Poder Judiciário que deverão replicar o entendimento fixado, como forma de racionalizar o sistema, evitando que múltiplos recursos extraordinários tenham que ser decididos, um a um, pela Corte Suprema.
+
+\hypertarget{visuxe3o-geral-da-repercussuxe3o-geral}{%
+\section{Visão Geral da Repercussão Geral}\label{visuxe3o-geral-da-repercussuxe3o-geral}}
+
+Instituída pela Emenda Constitucional n.~45/2004 e regulamentada no artigo 1035 do CPC, bem como nos artigos 322 a 329 do Regimento Interno do Supremo Tribunal Federal (RISTF), é pressuposto exigido nos recursos interpostos a partir de 3 de maio de 2007, data da entrada em vigor da Emenda Regimental n.~21/07 ao RISTF, que estabeleceu as normas necessárias à execução das disposições legais e constitucionais sobre o novo instituto (QO-AI 664.567, Min. Sepúlveda Pertence).
+
+A relevância da questão constitucional cuja apreciação pretende o recorrente, deve ser demonstrada de forma clara e objetiva no recurso extraordinário e sua análise é da competência exclusiva do Supremo Tribunal Federal.
+
+Os tribunais e turmas recursais de origem, sempre que identificarem multiplicidade de recursos com a mesma controvérsia, devem enviar recursos representativos da controvérsia para o STF a fim de que este analise a existência ou não de repercussão geral e, caso presente, possa definir uma tese de mérito a fim de resolver a controvérsia.
+
+A análise da repercussão geral é feita pelo Plenário Virtual do STF (que pode ser consultado neste link) a partir da inclusão de um processo leading case pelo Ministro relator, que se transformará no recurso paradigma da controvérsia. Este recurso paradigma pode ser um recurso representativo da controvérsia enviado pela origem ou qualquer outro RE ou ARE de relatoria do Ministro.
+
+Cada vez que uma nova controvérsia é inserida no Plenário Virtual ela ganha um número sequencial do Tema, um título (que descreve a questão jurídica discutida no processo) com a descrição da discussão do recurso extraordinário, bem como o voto do Ministro Relator sobre a controvérsia (Manifestação), sendo que os votos de cada um dos demais ministros podem ser acompanhados na medida que são inseridos no Plenário Virtual.
+
+O resultado do julgamento do Plenário Virtual pode ser pelo reconhecimento da repercussão geral (com análise posterior do mérito), reconhecimento da repercussão geral com reafirmação de jurisprudência e pela ausência da repercussão geral. Nos dois últimos casos, com a finalização do julgamento é criada uma Tese que sintetiza o entendimento do STF sobre essa mesma questão. A Tese também será firmada no primeiro caso depois da apreciação de mérito do recurso pelo Pleno do STF.
+
+Cada um dos temas de repercussão geral podem ser consultados através da página de pesquisa avançada \href{http://portal.stf.jus.br/jurisprudenciaRepercussao/pesquisarProcesso.asp}{acessível neste link}, onde podem ser combinados os mais diversos filtros de pesquisa.
+
+\hypertarget{entenda-a-repercussuxe3o-geral}{%
+\section{Entenda a Repercussão Geral}\label{entenda-a-repercussuxe3o-geral}}
+
+Incluído no ordenamento jurídico pela Emenda Constitucional n.~45/2004 e regulamentado pelos arts. 322 a 329 do Regimento Interno do Supremo Tribunal Federal e pelos arts. 1.035 a 1.041 do Código de Processo Civil (Lei n.~13.105/2015).
+Requisito de admissibilidade do recurso extraordinário em que deverá ser demonstrada a relevância da questão discutida no processo sob o aspecto econômico, político, social ou jurídico e que ultrapassem os interesses subjetivos da causa.
+
+\hypertarget{representativos-da-controvuxe9rsia}{%
+\subsection{Representativos da controvérsia}\label{representativos-da-controvuxe9rsia}}
+
+São aqueles recursos selecionados pelos tribunais de origem e turmas recursais no juízo primeiro de admissibilidade, sempre quando constatada a multiplicidade de recursos com idêntica questão de direito, com o sobrestamento ou não dos demais recursos que versem a mesma controvérsia. Os recursos indicados como representativos de controvérsia pelas instâncias de origem serão registrados previamente ao Presidente, que poderá afetar o tema diretamente ao Plenário Virtual, na forma do art. 326-A do RISTF. Os relatores desses recursos nos tribunais superiores não estão, entretanto, vinculados a eles, podendo selecionar outros recursos como representativos da controvérsia (§§ 1º, 4º e 5º do art. 1.036 do Código de Processo Civil).
+
+\hypertarget{recurso-paradigma}{%
+\subsection{Recurso paradigma}\label{recurso-paradigma}}
+
+Recurso extraordinário -- RE ou recurso extraordinário com agravo -- ARE no qual foi reconhecida a existência ou a ausência de repercussão geral e vinculado a um tema específico de repercussão geral pelos Ministros do Supremo Tribunal Federal. O recurso paradigma pode ser substituído por determinação dos Senhores Ministros.
+
+\hypertarget{tema}{%
+\subsection{Tema}\label{tema}}
+
+Categoria processual autônoma, com a finalidade de dar maior publicidade e racionalidade aos julgamentos com repercussão geral, com delimitação da questão de julgamento, por meio de título e descrição de acordo com a manifestação objeto do julgamento com repercussão geral, com menção clara à matéria do recurso., a partir da sua inclusão no Plenário Virtual ou no reconhecimento pelos Senhores Ministros. Cada tema de repercussão geral tem vinculado a ele uma situação processual específica e, após o julgamento, pode ter vinculado uma tese de julgamento.
+
+Todos os temas recebem um número sequencial, de acordo com o momento de sua criação e são disponibilizados para consulta por meio do sítio eletrônico do Supremo Tribunal Federal.
+
+\hypertarget{julgamento-da-admissuxe3o-ou-reconhecimento-de-repercussuxe3o-geral}{%
+\subsection{Julgamento da (admissão ou reconhecimento) de repercussão geral}\label{julgamento-da-admissuxe3o-ou-reconhecimento-de-repercussuxe3o-geral}}
+
+Juízo feito pelo STF sobre a existência, ou não, de repercussão geral de determinado tema, onde a delimitação inicial da questão posta em julgamento. Ordinariamente, a votação é realizada no Plenário Virtual, iniciando-se com a inserção de um processo paradigma pelo ministro presidente ou relator. Na inclusão do processo o Ministro preencherá ainda três campos próprios: ``questão constitucional'', ``repercussão geral'' e ``reafirmação de jurisprudência'', que devem ser analisados e votados.
+
+A inserção do tema no Plenário Virtual ocorre sempre às sextas-feiras e os demais ministros têm o prazo de vinte dias, em comum, para registrar voto (art. 324 do Regimento Interno do STF).
+
+A decisão pela existência ou não de matéria constitucional em debate no processo paradigma depende do voto da maioria absoluta dos senhores ministros (art. 324 §2º do RISTF). Somente será analisada a repercussão geral da questão se a maioria absoluta dos ministros reconhecerem a existência de matéria constitucional.
+
+A ausência de repercussão geral exige um quórum constitucionalmente qualificado, sendo necessários que dois terços dos senhores ministros a indiquem (§ 3º do art. 102 da Constituição da República).
+
+Não alcançado o quórum necessário para o reconhecimento da natureza infraconstitucional da questão ou da existência, ou não, de repercussão geral, o julgamento será suspenso e automaticamente retomado na sessão em meio eletrônico imediatamente seguinte, com a coleta das manifestações dos ministros ausentes. (art. 324 §4º do RISTF).
+
+O ministro que não se manifestar no prazo previsto terá sua não participação registrada na ata do julgamento.
+
+\hypertarget{plenuxe1rio-virtual}{%
+\subsection{Plenário Virtual}\label{plenuxe1rio-virtual}}
+
+É o ambiente eletrônico no qual são inseridos os paradigmas e criados os temas da repercussão geral para votação dos ministros. No Plenário Virtual os Ministros registram votos nos seguintes campos: ``questão constitucional'', ``repercussão geral'' e ``reafirmação de jurisprudência'', que devem ser analisados e votados.
+
+\hypertarget{processo-sobrestado}{%
+\subsection{Processo sobrestado}\label{processo-sobrestado}}
+
+São recursos extraordinários com julgamento suspenso nos tribunais de origem para aguardar o julgamento de mérito de temas com repercussão geral reconhecida.
+
+\hypertarget{suspensuxe3o-nacional}{%
+\subsection{Suspensão Nacional}\label{suspensuxe3o-nacional}}
+
+Determinação, pelo relator, da suspensão de todos os processos, desde a primeira instância, individuais ou coletivos, que versem sobre a mesma questão objeto de tema com repercussão geral reconhecida (§ 5º do art. 1035 do Código de Processo Civil). A suspensão nacional poderá ter a duração e escopo determinada pelo ministro Relator, bem como ser revogada por despacho fundamentado.
+
+\hypertarget{tese}{%
+\subsection{Tese}\label{tese}}
+
+Proposição firmada com observância obrigatória no julgamento de mérito de tema da repercussão geral ou em casos de ausência da repercussão geral. As teses são firmadas tanto nos julgamentos de mérito quanto nos julgamentos realizados no Plenário Virtual nos quais se declara a ausência de repercussão geral ou a reafirmação de jurisprudência.
+
+\hypertarget{painel-de-suspensuxe3o-nacional}{%
+\section{Painel de Suspensão Nacional}\label{painel-de-suspensuxe3o-nacional}}
+
 \hypertarget{sharing-your-book}{%
 \chapter{Sharing your book}\label{sharing-your-book}}
 
@@ -800,176 +1225,6 @@ By default, users will be directed to a 404 page if they try to access a webpage
 
 \hypertarget{metadata-for-sharing-1}{%
 \section{Metadata for sharing}\label{metadata-for-sharing-1}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{sharing-your-book-now}{%
-\chapter{Sharing your book NOW}\label{sharing-your-book-now}}
-
-\hypertarget{publishing-2}{%
-\section{Publishing}\label{publishing-2}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages-2}{%
-\section{404 pages}\label{pages-2}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing-2}{%
-\section{Metadata for sharing}\label{metadata-for-sharing-2}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{baixados}{%
-\chapter{Baixados}\label{baixados}}
-
-\hypertarget{publishing-3}{%
-\section{Publishing}\label{publishing-3}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages-3}{%
-\section{404 pages}\label{pages-3}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing-3}{%
-\section{Metadata for sharing}\label{metadata-for-sharing-3}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{sharing-your-book-2}{%
-\chapter{Sharing your book}\label{sharing-your-book-2}}
-
-\hypertarget{publishing-4}{%
-\section{Publishing}\label{publishing-4}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages-4}{%
-\section{404 pages}\label{pages-4}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing-4}{%
-\section{Metadata for sharing}\label{metadata-for-sharing-4}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{sharing-your-book-3}{%
-\chapter{Sharing your book}\label{sharing-your-book-3}}
-
-\hypertarget{publishing-5}{%
-\section{Publishing}\label{publishing-5}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages-5}{%
-\section{404 pages}\label{pages-5}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing-5}{%
-\section{Metadata for sharing}\label{metadata-for-sharing-5}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{sharing-your-book-4}{%
-\chapter{Sharing your book}\label{sharing-your-book-4}}
-
-\hypertarget{publishing-6}{%
-\section{Publishing}\label{publishing-6}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages-6}{%
-\section{404 pages}\label{pages-6}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing-6}{%
-\section{Metadata for sharing}\label{metadata-for-sharing-6}}
 
 Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
 
