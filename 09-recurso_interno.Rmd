@@ -1,31 +1,18 @@
-# Sharing your book NOW
+# Recursos Internos
 
-## Publishing
+Após a decisão, pode haver a interposição de agravo regimental ou a oposição de embargos de declaração ou de divergência. Nesses casos, o processo será concluso ao relator para que o recurso interno seja julgado. Se a decisão embargada for de uma Turma, os embargos de divergência serão distribuídos a ministro da outra; se a decisão objeto dos embargos for do Plenário, serão excluídos da distribuição o relator e o revisor. O julgamento não corresponde à efetiva finalização do processo, que se consuma apenas com a baixa definitiva deste.
+A [Resolução 604/2017](http://www.stf.jus.br/ARQUIVO/NORMA/RESOLUCAO604-2017.PDF) atualiza as classes e os incidentes disponíveis para autuação e registro de processos no Supremo Tribunal Federal.
 
-HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html
-
-## 404 pages
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax.
-
-## Metadata for sharing
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used.
-
-
-
-This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file. 
-
-Read more about the features of this output format here:
-
-https://pkgs.rstudio.com/bookdown/reference/gitbook.html
-
-Or use:
-
-```{r eval=FALSE}
-?bookdown::gitbook
+## Tabela de Recursos Internos
+```{r echo=FALSE, message=FALSE, warning=FALSE, include = TRUE, fig.showtext = TRUE, error=FALSE}
+library(readxl)
+library(dplyr)
+library(tidyverse)
+library(stringi)
+library(showtext)
+tabela_1_recursos_internos = read_excel("dados/tabela_1_recursos_internos.xlsx")
+tabela_1_recursos_internos %>%
+    knitr::kable(align = "l") %>% 
+    kableExtra::kable_styling(full_width = F,latex_options = "HOLD_position",font_size = 14)
 ```
-
 
