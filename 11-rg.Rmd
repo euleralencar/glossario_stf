@@ -1,31 +1,81 @@
-# Sharing your book
+# Repercussão Geral
 
-## Publishing
+## O Instituto da Repercussão Geral
 
-HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html
+O recurso extraordinário interposto perante os tribunais ou turmas recursais dos juizados especiais, é o meio processual por meio do qual o Supremo Tribunal Federal analisa, através do controle difuso de constitucionalidade, qualquer contrariedade aos dispositivos da Constituição Federal. 
 
-## 404 pages
+As hipóteses de cabimento do recurso extraordinário estão previstas no art. 102, III, da Constituição Federal, sendo que a Emenda Constitucional n. 45/04 incluiu o § 3º neste artigo, acrescentando aos demais requisitos de admissibilidade, que a questão constitucional discutida no recurso deve ter repercussão geral. 
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax.
+Por sua vez, o art. 1.035 do CPC estabelece que para fins da repercussão geral, deve ser considerada a existência de questões relevantes do ponto de vista econômico, político, social ou jurídico que ultrapassem os interesses subjetivos do processo. 
 
-## Metadata for sharing
+Dessa forma, a decisão do Supremo Tribunal Federal em repercussão geral vinculará os demais órgãos do Poder Judiciário que deverão replicar o entendimento fixado, como forma de racionalizar o sistema, evitando que múltiplos recursos extraordinários tenham que ser decididos, um a um, pela Corte Suprema.
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used.
+## Visão Geral da Repercussão Geral
+
+Instituída pela Emenda Constitucional n. 45/2004 e regulamentada no artigo 1035 do CPC, bem como nos artigos 322 a 329 do Regimento Interno do Supremo Tribunal Federal (RISTF), é pressuposto exigido nos recursos interpostos a partir de 3 de maio de 2007, data da entrada em vigor da Emenda Regimental n. 21/07 ao RISTF, que estabeleceu as normas necessárias à execução das disposições legais e constitucionais sobre o novo instituto (QO-AI 664.567, Min. Sepúlveda Pertence). 
+
+A relevância da questão constitucional cuja apreciação pretende o recorrente, deve ser demonstrada de forma clara e objetiva no recurso extraordinário e sua análise é da competência exclusiva do Supremo Tribunal Federal. 
+
+Os tribunais e turmas recursais de origem, sempre que identificarem multiplicidade de recursos com a mesma controvérsia, devem enviar recursos representativos da controvérsia para o STF a fim de que este analise a existência ou não de repercussão geral e, caso presente, possa definir uma tese de mérito a fim de resolver a controvérsia.
+
+A análise da repercussão geral é feita pelo Plenário Virtual do STF (que pode ser consultado neste link) a partir da inclusão de um processo leading case pelo Ministro relator, que se transformará no recurso paradigma da controvérsia. Este recurso paradigma pode ser um recurso representativo da controvérsia enviado pela origem ou qualquer outro RE ou ARE de relatoria do Ministro. 
+
+Cada vez que uma nova controvérsia é inserida no Plenário Virtual ela ganha um número sequencial do Tema, um título (que descreve a questão jurídica discutida no processo) com a descrição da discussão do recurso extraordinário, bem como o voto do Ministro Relator sobre a controvérsia (Manifestação), sendo que os votos de cada um dos demais ministros podem ser acompanhados na medida que são inseridos no Plenário Virtual.
+
+O resultado do julgamento do Plenário Virtual pode ser pelo reconhecimento da repercussão geral (com análise posterior do mérito), reconhecimento da repercussão geral com reafirmação de jurisprudência e pela ausência da repercussão geral. Nos dois últimos casos, com a finalização do julgamento é criada uma Tese que sintetiza o entendimento do STF sobre essa mesma questão. A Tese também será firmada no primeiro caso depois da apreciação de mérito do recurso pelo Pleno do STF. 
+
+Cada um dos temas de repercussão geral podem ser consultados através da página de pesquisa avançada [acessível neste link](http://portal.stf.jus.br/jurisprudenciaRepercussao/pesquisarProcesso.asp), onde podem ser combinados os mais diversos filtros de pesquisa.
+
+## Entenda a Repercussão Geral
+
+Incluído no ordenamento jurídico pela Emenda Constitucional n. 45/2004 e regulamentado pelos arts. 322 a 329 do Regimento Interno do Supremo Tribunal Federal e pelos arts. 1.035 a 1.041 do Código de Processo Civil (Lei n. 13.105/2015).
+Requisito de admissibilidade do recurso extraordinário em que deverá ser demonstrada a relevância da questão discutida no processo sob o aspecto econômico, político, social ou jurídico e que ultrapassem os interesses subjetivos da causa.
+
+**Representativos da controvérsia**
+
+São aqueles recursos selecionados pelos tribunais de origem e turmas recursais no juízo primeiro de admissibilidade, sempre quando constatada a multiplicidade de recursos com idêntica questão de direito, com o sobrestamento ou não dos demais recursos que versem a mesma controvérsia. Os recursos indicados como representativos de controvérsia pelas instâncias de origem serão registrados previamente ao Presidente, que poderá afetar o tema diretamente ao Plenário Virtual, na forma do art. 326-A do RISTF. Os relatores desses recursos nos tribunais superiores não estão, entretanto, vinculados a eles, podendo selecionar outros recursos como representativos da controvérsia (§§ 1º, 4º e 5º do art. 1.036 do Código de Processo Civil).
+
+**Recurso paradigma**
+
+Recurso extraordinário – RE ou recurso extraordinário com agravo – ARE no qual foi reconhecida a existência ou a ausência de repercussão geral e vinculado a um tema específico de repercussão geral pelos Ministros do Supremo Tribunal Federal. O recurso paradigma pode ser substituído por determinação dos Senhores Ministros.
+
+**Tema**
+
+Categoria processual autônoma, com a finalidade de dar maior publicidade e racionalidade aos julgamentos com repercussão geral, com delimitação da questão de julgamento, por meio de título e descrição de acordo com a manifestação objeto do julgamento com repercussão geral, com menção clara à matéria do recurso., a partir da sua inclusão no Plenário Virtual ou no reconhecimento pelos Senhores Ministros. Cada tema de repercussão geral tem vinculado a ele uma situação processual específica e, após o julgamento, pode ter vinculado uma tese de julgamento.
+
+Todos os temas recebem um número sequencial, de acordo com o momento de sua criação e são disponibilizados para consulta por meio do sítio eletrônico do Supremo Tribunal Federal.
+
+**Julgamento da (admissão ou reconhecimento) de repercussão geral**
+
+Juízo feito pelo STF sobre a existência, ou não, de repercussão geral de determinado tema, onde a delimitação inicial da questão posta em julgamento. Ordinariamente, a votação é realizada no Plenário Virtual, iniciando-se com a inserção de um processo paradigma pelo ministro presidente ou relator. Na inclusão do processo o Ministro preencherá ainda três campos próprios: “questão constitucional”, “repercussão geral” e “reafirmação de jurisprudência”, que devem ser analisados e votados.
+
+A inserção do tema no Plenário Virtual ocorre sempre às sextas-feiras e os demais ministros têm o prazo de vinte dias, em comum, para registrar voto (art. 324 do Regimento Interno do STF). 
+
+A decisão pela existência ou não de matéria constitucional em debate no processo paradigma depende do voto da maioria absoluta dos senhores ministros (art. 324 §2º do RISTF). Somente será analisada a repercussão geral da questão se a maioria absoluta dos ministros reconhecerem a existência de matéria constitucional.
+
+A ausência de repercussão geral exige um quórum constitucionalmente qualificado, sendo necessários que dois terços dos senhores ministros a indiquem (§ 3º do art. 102 da Constituição da República).
+
+Não alcançado o quórum necessário para o reconhecimento da natureza infraconstitucional da questão ou da existência, ou não, de repercussão geral, o julgamento será suspenso e automaticamente retomado na sessão em meio eletrônico imediatamente seguinte, com a coleta das manifestações dos ministros ausentes. (art. 324 §4º do RISTF). 
+
+O ministro que não se manifestar no prazo previsto terá sua não participação registrada na ata do julgamento.
+
+**Plenário Virtual**
+
+É o ambiente eletrônico no qual são inseridos os paradigmas e criados os temas da repercussão geral para votação dos ministros. No Plenário Virtual os Ministros registram votos nos seguintes campos: “questão constitucional”, “repercussão geral” e “reafirmação de jurisprudência”, que devem ser analisados e votados.
+
+**Processo sobrestado**
+
+São recursos extraordinários com julgamento suspenso nos tribunais de origem para aguardar o julgamento de mérito de temas com repercussão geral reconhecida.
+
+**Suspensão Nacional**
+
+Determinação, pelo relator, da suspensão de todos os processos, desde a primeira instância, individuais ou coletivos, que versem sobre a mesma questão objeto de tema com repercussão geral reconhecida (§ 5º do art. 1035 do Código de Processo Civil). A suspensão nacional poderá ter a duração e escopo determinada pelo ministro Relator, bem como ser revogada por despacho fundamentado.
+
+**Tese**
+
+Proposição firmada com observância obrigatória no julgamento de mérito de tema da repercussão geral ou em casos de ausência da repercussão geral. As teses são firmadas tanto nos julgamentos de mérito quanto nos julgamentos realizados no Plenário Virtual nos quais se declara a ausência de repercussão geral ou a reafirmação de jurisprudência.
 
 
-
-This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file. 
-
-Read more about the features of this output format here:
-
-https://pkgs.rstudio.com/bookdown/reference/gitbook.html
-
-Or use:
-
-```{r eval=FALSE}
-?bookdown::gitbook
-```
+## Painel de Suspensão Nacional
 
 
