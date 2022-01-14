@@ -2,6 +2,7 @@
 
 Os processos em tramitação no STF também são chamados de acervo. Nele estão computados todos os processos que tiveram andamento de entrada e ainda não foram baixados.
 
+
 ## Processos em tramitação (acervo)
 
 O acervo processual do Tribunal corresponde ao quantitativo de processos em tramitação (excluindo-se os sigilosos) em determinada data. Computa-se, portanto, tudo que a Corte recebeu ([veja mais aqui](#recebimento)), excetuados os processos que já baixaram às origens ou arquivados no Tribunal ([veja mais aqui](#baixados)). 
