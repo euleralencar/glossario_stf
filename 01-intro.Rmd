@@ -10,24 +10,23 @@ Esse avanço se deu também com aproximação da sociedade através do fortaleci
 
 A Corte avançou significativamente na Transparência de seus dados. Ainda em 2018, o Tribunal lançou Resolução 613/2018 que regulamenta a aplicação, no âmbito do Supremo Tribunal Federal, da Lei nº 12.527/2011, que versa sobre o acesso à informação. Os dados estão disponíveis no site:
 
-[Figura]
+```{r, echo=FALSE, out.width="110%",out.height="130%",fig.show='hold', fig.align='center'}
+knitr::include_graphics("imagens/imagem_1_introducao.png")
 
-Ainda neste sentido, pensando na Transparência de dados judiciais, o portal da Estatística (http://portal.stf.jus.br/estatistica/) foi reformulado com o objetivo de trazer dados atualizados diariamente para seu jurisdicionado de maneira interativa, amigável e intuitiva. 
+```
+
+Ainda neste sentido, pensando na Transparência de dados judiciais, o portal da Estatística (http://portal.stf.jus.br/estatistica/) foi reformulado com o objetivo de trazer dados atualizados diariamente para seu jurisdicionado de maneira interativa, amigável e intuitiva.
+
+```{r, echo=FALSE, out.width="110%",out.height="130%",fig.show='hold', fig.align='center'}
+knitr::include_graphics("imagens/imagem_2_introducao.png")
+
+```
 
 A página da estatística procura trazer os principais resultados de forma resumida numa primeira página e possibilita o detalhamento da informação utilizando o botão "VER MAIS".
 
-[Figura]
+```{r, echo=FALSE, out.width="110%",out.height="130%",fig.show='hold', fig.align='center'}
+knitr::include_graphics("imagens/imagem_3_introducao.png")
+
+```
 
 O documento a seguir tem como objetivo documentar a definição e critérios das principais estatísticas judiciais da Corte disponíveis no site e mostrar algumas funcionalidades.
-
----
-
-## A section
-
-All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
-
-### An unnumbered section {-}
-
-Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
-
-
