@@ -27,13 +27,13 @@ entenda-o-acervo
 conceitos-do-acervo
 acervo-processual
 acervo-processual-de-cada-ministro
-localização-dos-processos
+localizacao-processos
 localizados-no-gabinete-do-relator
 localizados-no-gabinete-de-outros-ministros
 procuradoria-geral-da-república
 advogados-órgãos-externos-e-setores-internos
 situação-dos-processos
-sem-decisão-final
+sem-decisao-final
 em-instrução-sem-decisão
 com-alguma-decisão-exceto-decisão-final
 regra-relatoria

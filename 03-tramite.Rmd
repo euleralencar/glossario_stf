@@ -1,6 +1,6 @@
-# <mark>Trâmite processual</mark> {#tramite}
+# Trâmite processual {#tramite}
 
-O site da estatística foi pensado para o público geral. **A ideia é trazer transparência e possibilidade de consulta aos microdados de forma fácil e intuitiva**. Para isso, é interessante explicarmos um pouco mais detalhadamente a tramitação processual do STF de forma esquematizada. <mark>Retirar "Remessa devida da figura"</mark>
+O site da estatística foi pensado para o público geral. **A ideia é trazer transparência e possibilidade de consulta aos microdados de forma fácil e intuitiva**. Para isso, é interessante explicarmos um pouco mais detalhadamente a tramitação processual do STF de forma esquematizada.
 
 ```{r echo=FALSE, out.width = '100%',dpi = 300}
 knitr::include_graphics("imagens/fig-cap3-1.png")
