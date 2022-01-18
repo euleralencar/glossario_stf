@@ -1,3 +1,8 @@
 `r if (knitr::is_html_output()) '
-# References {-}
+# Fontes {-}
 '`
+1. [Relatório de Gestão do Ministro Dias Toffoli](http://www.stf.jus.br/arquivo/cms/noticiaNoticiaStf/anexo/relatGestaoDT.pdf)
+
+1. [Relatório de atividades 2019 - STF](http://www.stf.jus.br/arquivo/cms/centralDoCidadaoAcessoInformacaoGestaoEstrategica/anexo/2020_01_24_13.08_RelatoriodeAtividades2019_completo.pdf)
+
+1. [Relatório de atividades 2018 - STF](http://www.stf.jus.br/arquivo/cms/centralDoCidadaoAcessoInformacaoGestaoEstrategica/anexo/RelatorioAtividadesSTF2018.pdf)

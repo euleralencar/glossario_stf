@@ -69,11 +69,5 @@ o-instituto-da-repercussão-geral
 visão-geral-da-repercussão-geral
 entenda-a-repercussão-geral
 painel-de-suspensão-nacional
-sharing-your-book
-publishing
-pages
-metadata-for-sharing
-sharing-your-book-1
-publishing-1
-pages-1
-metadata-for-sharing-1
+perguntas-frequentes-faq
+contribua
