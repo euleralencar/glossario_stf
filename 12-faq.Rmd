@@ -1,31 +1,36 @@
-# Sharing your book
+# Perguntas frequentes (FAQ)
 
-## Publishing
+**Consigo obter dados de 1988 até hoje?**
 
-HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html
+> Os dados anteriores a 2000 não são precisos. O STF começou pelo processo de digitalização em 1996 e somente a partir de 2000 as bases foram complemente registradas em bases de dados estruturadas e informatizadas. Isso siginfica que processos autuados a partir de 2000 estão completamente registrados na base de dados e processos que estavam em tramitação nesse ano também foram incluídos nas bases digitais. 
 
-## 404 pages
+<mark>Verificar com STI sobre o histórico dessa questão.</mark>
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax.
+**Como obter dados de 1988 até 2000?**
 
-## Metadata for sharing
+<mark>Sem resposta.</mark>
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used.
+**Posso baixar os dados de acervo?**
 
+> Sim. É possível baixar os dados de acervo em um arquivo que é atualizado diariamente, dados de acervo recursais e originários. Além disso, é possível baixa a listagem de processos recebidos e baixados no ano.
 
+> Relação de base dados [aqui](http://portal.stf.jus.br/textos/verTexto.asp?servico=estatistica&pagina=acervoatual).^[Dados atualizados diariamente. Não há possibilidade de resgate do histórico.]
 
-This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same.
+**Como posso fazer uma pesquisa de Amicus Curie?**
 
-Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file. 
+<mark>Como fazer uma pesquisa nas partes dos processos em tramitação (acervo)?</mark>
 
-Read more about the features of this output format here:
+**Como são elaboradas as páginas e relatórios estatísticos?**
 
-https://pkgs.rstudio.com/bookdown/reference/gitbook.html
+> Os relatórios são elaborados a partir de consultas à base de dados do Tribunal. A consulta é construída a partir de parâmetros lógicos e o resultado é apresentado sem interferência humana. Ou seja, os dados são apresentados da mesma forma como estão registrados na base de dados. 
 
-Or use:
+**Qual é a freqüência de atualização das páginas da estatística?**
 
-```{r eval=FALSE}
-?bookdown::gitbook
-```
+> As páginas da estatística referentes ao acervo, às decisões, à pauta do Plenário e à competência recursal divulgadas no Portal do STF são atualizadas diariamente, de forma automática, e trazem os dados do dia anterior. As demais páginas são atualizadas mensalmente pela Assessoria de Gestão Estratégica e trazem as informações referentes ao fechamento do mês anterior. 
 
+**Como é determinada a situação de um processo?**
+
+> Como as consultas são feitas automaticamente, a situação de um processo é determinada a partir de parâmetros lógicos, baseados nos dados disponíveis. Embora ainda haja inconsistências, a base de dados do Tribunal permite, atualmente, um grau razoável de precisão nessa identificação. Para saber em que situação se encontra um processo, é necessário definir quais dados a determinam, bem como aqueles que a excluem.  Por exemplo, os processos que estão na pauta aguardando julgamento - situação "Em mesa/pauta" - são aqueles que possuem um andamento que indique a inclusão na pauta e que não possuem andamento posterior a esse que indique decisão colegiada.  
+Os erros na identificação da situação do processo podem ser resultado de:  <br> 1. inadequação dos parâmetros de consulta definidos; <br> 2.
+falha na aplicação dos parâmetros pelo sistema de estatística; <br> 3. falha no registro dos dados (ex.: o processo não possui andamento de inclusão em pauta, mas andamento de despacho que, em seu teor, contém determinação de inclusão em pauta. O sistema não e capaz de 'ler' o despacho, mas somente os dados lançados em sistema. Nesse caso, o processo está em pauta, mas os relatórios estatísticos não conseguirão identificar essa situação).
 
