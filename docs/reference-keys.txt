@@ -1,7 +1,7 @@
 fig:unnamed-chunk-17
-sobre
-como-usar
-introdução-versão-beta
+seja-bem-vindo
+para-quem-é-esse-livro
+introdução
 historia
 estatística-no-stf
 início
@@ -16,7 +16,7 @@ recursos-internos
 andamentos-processuais
 andamentos-processuais-ativos
 acervo
-processos-em-tramitação-acervo
+processos-em-tramitação
 andamentos-que-colocam-um-processo-em-trâmite
 andamentos-que-retiram-um-processo-de-trâmite
 histórico-do-acervo
