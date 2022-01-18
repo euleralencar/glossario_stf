@@ -2,15 +2,19 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
+      collapse: section
       before: |
         <li><a href="./index.html"><img src = "https://raw.githubusercontent.com/a-hayana/notes/main/index.png" width = 100%></a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado com bookdown</a></li>
-#    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
-    download: "pub"
-    search:
-      engine: lunr
-      info: false
+    edit:
+      link: https://github.com/euleralencar/glossario_stf/%s
+      text: "Edit"
+    #download: "pub"
+    #search:
+      #engine: lunr
+      #info: false
+    sharing: no
 #   download: ["pdf", "epub"]
 # bookdown::pdf_book:
 #   includes:
@@ -18,5 +22,5 @@ bookdown::gitbook:
 #   latex_engine: xelatex
 #   citation_package: natbib
 #   keep_tex: yes
-  bookdown::epub_book: default
+#  bookdown::epub_book: default
   

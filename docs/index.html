@@ -56,7 +56,6 @@ set in the _output.yml file.</p>" />
 
 
 
-
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
@@ -226,7 +225,6 @@ set in the _output.yml file.</p>" />
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -237,25 +235,15 @@ set in the _output.yml file.</p>" />
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
+"sharing": false,
 "fontsettings": {
 "theme": "white",
 "family": "sans",
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/euleralencar/glossario_stf/index.Rmd",
+"text": "Edit"
 },
 "history": {
 "link": null,
@@ -265,14 +253,13 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pub"],
+"download": null,
 "search": {
-"engine": "lunr",
-"options": null,
-"info": false
+"engine": "fuse",
+"options": null
 },
 "toc": {
-"collapse": "subsection"
+"collapse": "section"
 }
 });
 });
