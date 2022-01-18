@@ -27,7 +27,7 @@ The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   
 
-<meta name="author" content="SGE" />
+<meta name="author" content="STF/SGE" />
 
 
 
@@ -48,7 +48,6 @@ set in the _output.yml file.</p>" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -5143,7 +5142,6 @@ Transitado(a) em julgado
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -5154,25 +5152,15 @@ Transitado(a) em julgado
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
+"sharing": false,
 "fontsettings": {
 "theme": "white",
 "family": "sans",
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/euleralencar/glossario_stf/03-tramite.Rmd",
+"text": "Edit"
 },
 "history": {
 "link": null,
@@ -5182,14 +5170,13 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pub"],
+"download": null,
 "search": {
-"engine": "lunr",
-"options": null,
-"info": false
+"engine": "fuse",
+"options": null
 },
 "toc": {
-"collapse": "subsection"
+"collapse": "section"
 }
 });
 });
