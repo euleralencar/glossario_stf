@@ -10,7 +10,7 @@ As decisões colegiadas dos Tribunais são denominadas acórdãos. O julgamento 
  
 ## Despacho 
 
-Os despachos são atos do magistrado que servem para dar impulso ao processo (ex.: pedido de informações a autoridades ou a outros juízos, encaminhamento à PGR para parecer, determinação de citação, intimação ou outras diligências) e não são recorríveis.
+Os despachos são atos do magistrado que servem para dar impulso ao processo (ex.: pedido de informações a autoridades ou a outros juízos, encaminhamento à PGR para parecer, determinação de citação, intimação ou outras diligências) e não são recorríveis. Não são contabilizados, em regra, como decisão embora possam ter teor decisório.
 
 ## Acórdão
 
