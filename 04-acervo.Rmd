@@ -220,5 +220,5 @@ Casos em que ocorre a alteração de acervo (o processo passa a contar no acervo
 - Se o processo receber o andamento 8509 - Substituição do Relator, art. 38, II, do RISTF, em que o relator, quando vencido no julgamento, é substituído pelo Ministro designado para lavrar o acórdão, o processo permanece no acervo do Ministro Relator até que haja algum incidente. Recebido o incidente, o campo “Relator atual” passa a ser preenchido com o nome do relator do último incidente, alterando o acervo daquele. 
 
 A **substituição de relatoria** é a troca de um relator por outro, conforme previsto no RISTF. No caso da substituição do relator vencido no julgamento, o registro de redator para o acórdão é lançado no sistema textual pela equipe do Plenário/Turmas. 
-Em termos quantitativos, devido à regra de sistema, este registro não impacta o acervo dos ministros. Como mencionado, o acervo do ministro só será impactado após o registro do incidente (recurso interposto contra o respectivo acórdão). 
+Em termos quantitativos, devido à regra de sistema, este registro não impacta o acervo dos ministros. Como mencionado, o acervo do ministro só será impactado após o registro do incidente (recurso interposto contra o respectivo acórdão).  
 
