@@ -3,7 +3,7 @@
 Os processos em tramitação no STF também são chamados de acervo. Nele estão computados todos os processos que tiveram andamento de entrada e ainda não foram baixados.
 
 
-## Processos em tramitação
+## Processos em tramitação (acervo)
 
 O acervo processual do Tribunal corresponde ao quantitativo de processos em tramitação (excluindo-se os sigilosos) em determinada data. Computa-se, portanto, tudo que a Corte recebeu ([veja mais aqui](#recebimento)), excetuados os processos que já baixaram às origens ou arquivados no Tribunal ([veja mais aqui](#baixados)). 
 
@@ -189,9 +189,10 @@ Se não houver recurso, ocorrerá o trânsito em julgado da decisão e, subseque
 
 ### Regra de relatoria do processo {#regra-relatoria}
 
-O acervo divulgado do Ministro no Portal do STF utiliza como critério o filtro do campo “Relator Atual” do Portal de Informações Gerenciais. Ao chegar no Tribunal, o processo é sorteado para o relator do mérito que será alocado inicialmente como “Relator Atual”. 
+O acervo divulgado do Ministro no Portal do STF utiliza como critério o filtro do campo “Relator Atual” do Portal de Informações Gerenciais. Ao chegar no Tribunal, o processo é sorteado para um dos Ministros Relatores que será alocado inicialmente como “Relator Atual.” Ou seja, o processo passa a constar no acervo do Ministro a partir da distribuição.
 
-Ou seja, o processo constará no acervo de determinado Ministro, quando o processo for distribuído para o Ministro:
+Andamentos que indicam distribuição:
+
 
 ```{r echo=FALSE, warning=FALSE}
 cap4_1 <- readxl::read_excel("dados/cap4.xlsx", sheet = "acervo_4-1")
@@ -206,12 +207,19 @@ kableExtra::kable()
 knitr::include_graphics("imagens/fig-cap4-3.png")
 ```
 
-Casos de substituição de relatoria para efeitos de acervo:
+Casos em que ocorre a alteração de acervo (o processo passa a contar no acervo de outro ministro):
 
-- Se o processo receber os andamentos 7508 - substituição nos casos, por exemplo, de aposentadoria, renúncia ou morte ou o andamento 7505 -  redistribuição posteriores à distribuição, passará a constar no acervo de um novo ministro.
+> Por Substituição:
 
-- Se o processo receber o andamento 8509 - Substituição do Relator, art. 38, II, do RISTF, em que o relator, quando vencido no julgamento, é substituído pelo Ministro designado para lavrar o acórdão, o processo permanece no acervo do Ministro Relator até que haja algum incidente. Recebido o incidente, o campo “Relator atual” passa a ser preenchido com o nome do relator do último incidente, alterando o acervo deste. 
+- Quando o processo receber o andamento 7508 - Substituição do Relator, art. 38 do RISTF – é mais utilizado na substituição dos casos de aposentadoria, renúncia ou morte;
 
-A **substituição de relatoria** é a troca de um relator por outro Ministro previamente determinado em normativo. Ela se diferencia da redistribuição porque se sabe exatamente para qual novo Ministro a relatoria do processo deverá ser atribuída.
+> Por Redistribuição:
 
-No caso da substituição do relator vencido no julgamento, o registro de redator para o acórdão é lançado no sistema textual pela equipe do Plenário/Turmas. Em termos quantitativos, devido à regra de sistema, este registro não impacta o acervo dos ministros. Como mencionado, o acervo do ministro só será impactado após o recebimento do incidente.  Nos casos em que o relator é vencido,  ao ingressar uma petição no STF, cada caso será analisado individualmente para verificar para quem será o registro. Se a petição tiver relação com o acórdão, normalmente, deve ser registrada para o redator do acórdão. 
+- Quando o processo receber o andamento 7505 - Redistribuído –  quando o Min. Presidente determina a redistribuição (art. 68, caput e §1º, do RISTF e Resolução 706/2020) ou quando o relator atual declara impedimento – art. 67, §3º do RISTF (só ocorre em processos distribuídos);
+
+- Se o processo receber o andamento 8509 - Substituição do Relator, art. 38, II, do RISTF, em que o relator, quando vencido no julgamento, é substituído pelo Ministro designado para lavrar o acórdão, o processo permanece no acervo do Ministro Relator até que haja algum incidente. Recebido o incidente, o campo “Relator atual” passa a ser preenchido com o nome do relator do último incidente, alterando o acervo daquele. 
+
+A **substituição de relatoria** é a troca de um relator por outro, conforme previsto no RISTF. No caso da substituição do relator vencido no julgamento, o registro de redator para o acórdão é lançado no sistema textual pela equipe do Plenário/Turmas. 
+Em termos quantitativos, devido à regra de sistema, este registro não impacta o acervo dos ministros. Como mencionado, o acervo do ministro só será impactado após o registro do incidente (recurso interposto contra o respectivo acórdão). 
+
+<mark> **REVER:** Nos casos em que o relator é vencido,  ao ingressar uma petição no STF, cada caso será analisado individualmente para verificar para quem será o registro. Se a petição tiver relação com o acórdão, normalmente, deve ser registrada para o redator do acórdão. </mark>
