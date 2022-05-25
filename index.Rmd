@@ -1,5 +1,5 @@
 --- 
-title: "Glossário estatístico (STF)"
+title: "Glossário do Corte Aberta e BI"
 author: "STF/SGE"
 date: "`r paste('Última atualização:', format(Sys.Date(), '%d/%m/%Y'))`"
 site: bookdown::bookdown_site
