@@ -16,7 +16,7 @@ recursos-internos
 andamentos-processuais
 andamentos-processuais-ativos
 acervo
-processos-em-tramitação
+processos-em-tramitação-acervo
 andamentos-que-colocam-um-processo-em-trâmite
 andamentos-que-retiram-um-processo-de-trâmite
 histórico-do-acervo
